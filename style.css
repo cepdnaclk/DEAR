@@ -215,7 +215,7 @@ main{
 /* ----------- peoples ----------*/
 
 #peoples{
-    width: 80%;
+    width: 85%;
     margin: 20px auto;
     padding: 100px 10px 10px ;
     border-bottom: 1px solid rgb(178, 176, 176);
@@ -229,6 +229,7 @@ main{
 }
 
 .cards{
+    width: 100%;
     margin: 15px 0 ;
     display: flex;
     justify-content: center;
@@ -242,9 +243,8 @@ main{
 }
 
 .card{
-    width: 100%;
-    min-width: 80px;
-    max-width: 160px;
+    max-width: 140px;
+    min-width: 120px;
     border: 1px solid rgb(138, 136, 136);
     border-radius: 8px;
     background-color: rgb(233, 229, 229);
@@ -266,6 +266,7 @@ main{
     color: rgb(71, 70, 70);
     width: 93%;
     text-align: left;
+    font-size: 0.8rem;
 }
 
 /* ----------- resources ----------- */
