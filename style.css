@@ -274,7 +274,7 @@ main{
 #resources{
     width: 80%;
     margin: 0px auto;
-    padding: 40px 0 40px;
+    padding: 100px 0 40px;
     border-bottom: 1px solid rgb(178, 176, 176);
 }
 
@@ -292,6 +292,12 @@ main{
 
 .source h4::before{
     content: "📌";
+}
+
+.source p{
+    padding-left: 25px;
+    color: #2e2d2d;
+
 }
 
 /* -------- FOOTER -----------*/
@@ -342,6 +348,30 @@ main{
 
 .copyright p{
     font-size: 0.8rem;
+}
+
+/* ------- GUILDLINES -------- */
+#guidelines{
+    width: 80%;
+    margin: 0px auto;
+    padding: 100px 0 40px;
+    border-bottom: 1px solid rgb(178, 176, 176);
+}
+
+#guidelines h2{
+    color: #d20015;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+#guidelines ul{
+    padding-left: 20px;
+}
+
+#guidelines li{
+    margin-bottom: 8px;
+    color: #2e2d2d;
 }
 
 
