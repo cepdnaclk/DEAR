@@ -222,10 +222,18 @@ main{
     font-weight: 500;
 }
 
-.area-content ol ul{
+.area-content ol ol{
     margin-left: 20px;
     color: #2f2e2e;
     margin-bottom: 4px;
+    list-style-type: lower-roman;
+}
+
+.area-content ol ol ol{
+    margin-left: 20px;
+    color: #2f2e2e;
+    margin-bottom: 4px;
+    list-style-type: lower-alpha;
 }
 
 
