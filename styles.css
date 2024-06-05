@@ -282,16 +282,16 @@ main{
     color: #2e2d2d;
 }
 
-/* ----------- peoples ----------*/
+/* ----------- people ----------*/
 
-#peoples{
+#people{
     width: 85%;
     margin: 20px auto;
     padding: 100px 10px 10px ;
     border-bottom: 1px solid rgb(178, 176, 176);
 }
 
-#peoples h2{
+#people h2{
     font-size: 2rem;
     text-align: center;
     margin-bottom: 20px;
@@ -325,6 +325,8 @@ main{
     border-radius: 8px;
     width: 100%;
 }
+
+
 
 .details{
     width: 100%;
@@ -367,10 +369,6 @@ main{
 .source{
     width: fit-content;
     margin: 0 0 8px 0;
-}
-
-.source h4::before{
-    content: "📌";
 }
 
 .source p{
