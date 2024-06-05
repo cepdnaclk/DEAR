@@ -179,7 +179,7 @@ main{
     width: 100%;
     height: fit-content;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .about-image{
@@ -375,40 +375,6 @@ main{
     font-size: 0.8rem;
 }
 
-
-
-@media only screen and (max-width: 768px) {
-    body{
-        padding-top: 130px;
-    }
-
-    header{
-        height: 80px;
-    }
-
-    header a img{
-        width: 100px;
-    }
-
-    #home-page{
-        margin: 10px auto 0px auto;
-        padding: 0px 3%;
-    }
-
-    #home-page h1{
-        /* font-size: 55px; */
-        line-height: unset;
-    } 
-     /* #home-page h4{
-        font-size: 20px;
-        width: 100%;
-    }
-    #home-page p{
-        font-size: 14px;
-        width: 100%;
-    } */
-}
-
 @media only screen and (max-width: 1024px) {
     .nav-links{
         display: none;
@@ -424,8 +390,8 @@ main{
 }
 
 @media (max-width: 1024px){
-    body{
-        padding-top: 180px;
+    #home-page{
+        padding-top: 120px;
     }
     #home-page h1{
         font-size: 55px;
@@ -436,22 +402,47 @@ main{
 }
 
 @media (max-width: 768px){
-    body{
-        padding-top: 150px;
-    }
-    #home-page h1{
-        font-size: 45px;
-    }
     #home-page h4{
         font-size: 15px;
     }
     #home-page p{
         font-size: 14px;
     }
+    header{
+        height: 80px;
+    }
+
+    header a img{
+        width: 100px;
+    }
+
+    #home-page{
+        margin: 10px auto 0px auto;
+        padding: 130px 3%;
+    }
+
+    #home-page h1{
+        font-size: 2.3rem;
+        line-height: unset;
+    }
+    .about-container{
+        flex-wrap: wrap;
+    } 
+    .about-content{
+        width: fit-content;
+        padding-left: 0;
+    }
+    .about-image{
+        display: flex;
+        justify-content: center;
+        width: 97%;
+    }
+
+
 }
 
 @media (max-width: 425px){
-    body{
+    #home-page{
         padding-top: 140px;
     }
     #home-page h1{
@@ -468,7 +459,7 @@ main{
 }
 
 @media (max-width: 375px){
-    body{
+    #home-page{
         padding-top: 130px;
     }
     #home-page h1{
