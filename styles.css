@@ -1,6 +1,7 @@
 *{
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
 
 body{
@@ -103,31 +104,36 @@ main{
 /* ----------- HOME ---------- */
 
 #home-page{
-    width: 80%;
+    width: 90%;
     margin: 10px auto;
     padding: 170px 8% 30px;
     border-bottom: 1px solid rgb(178, 176, 176);
-
 }
 
 #home-page h1{
     line-height: 85px;
-    font-size: 70px;
+    font-size: 4rem;
+    font-weight: 800;
     padding-bottom: 20px;
+    text-shadow: 1px 1px 5px #c0bfbf;
 }
 
 #home-page h4{
-    font-size: 26px;
+    font-size: 1.5rem;
     width: 80%;
     color: #d20015;
     padding-bottom: 10px;
 }
 
+#home-page h4 a{
+    text-decoration: none;
+}
+
 #home-page p{
-    font-size: 18px;
+    font-size: 1rem;
     width: 70%;
     color: rgb(69, 69, 69);
-    padding-bottom: 25px;
+    /* padding-bottom: 25px; */
 }
 
 #side-nav{
@@ -164,7 +170,7 @@ main{
 #about{
     width: 80%;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 100px 0 40px;
     border-bottom: 1px solid rgb(178, 176, 176);
 }
 
@@ -237,13 +243,13 @@ main{
     flex-wrap: wrap;
 }
 
-.lectures, .students, .external{
+.lectures, .students, .collaborators{
     text-align: center;
     margin-bottom: 25px;
 }
 
 .card{
-    max-width: 140px;
+    max-width: 160px;
     min-width: 120px;
     border: 1px solid rgb(138, 136, 136);
     border-radius: 8px;
@@ -267,18 +273,27 @@ main{
     width: 93%;
     text-align: left;
     font-size: 0.8rem;
+    margin-bottom: 8px;
 }
 
-/* ----------- resources ----------- */
+.details img{
+    width: 20px;
+    float: left;
+    vertical-align: bottom;
+    margin-bottom: 8px;
+    margin-left: 5px;
+}
 
-#resources{
+/* ----------- references ----------- */
+
+#references{
     width: 80%;
     margin: 0px auto;
     padding: 100px 0 40px;
     border-bottom: 1px solid rgb(178, 176, 176);
 }
 
-#resources h2{
+#references h2{
     color: #d20015;
     text-align: center;
     margin-bottom: 20px;
@@ -287,7 +302,7 @@ main{
 
 .source{
     width: fit-content;
-    margin: 0 auto 8px;
+    margin: 0 0 8px 0;
 }
 
 .source h4::before{
@@ -297,7 +312,7 @@ main{
 .source p{
     padding-left: 25px;
     color: #2e2d2d;
-
+    font-size: 0.9rem;
 }
 
 
@@ -418,12 +433,15 @@ main{
 
     #home-page{
         margin: 10px auto 0px auto;
-        padding: 130px 3%;
+        padding: 130px 3% 30px;
     }
 
     #home-page h1{
         font-size: 2.3rem;
         line-height: unset;
+    }
+    .about{
+        padding-bottom: 0px;
     }
     .about-container{
         flex-wrap: wrap;
@@ -456,6 +474,9 @@ main{
         font-size: 12px;
         width: 90%;
     }
+    .card{
+        width: 140px;
+    }
 }
 
 @media (max-width: 375px){
@@ -465,6 +486,9 @@ main{
     #home-page h1{
         font-size: 22px;
         line-height: unset;
+    }
+    .card{
+        width: 130px;
     }
 }
 
