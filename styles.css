@@ -36,10 +36,10 @@ header a img{
     float: right;
     justify-content: space-between;
     width: 75%;
+    height: 100%;
     align-items: center;
-    padding-right: 50px;
-    margin-top: auto;
-    margin-bottom: auto;
+    /* padding-right: 50px; */
+    margin: auto 50px auto 0;
 }
 
 .nav-links a{
@@ -183,8 +183,8 @@ main{
 }
 
 .about-image{
-    width: 49%;
-    min-width: 350px;
+    width: 50%;
+    min-width: 307px;
     margin: 0 auto;
 }
 
@@ -199,7 +199,7 @@ main{
 
 .about-content{
     width: 48%;
-    padding: 10px 5px 8px 20px;
+    padding: 10px 0 8px 20px;
     min-width: 280px;
 }
 
@@ -365,7 +365,6 @@ main{
     font-size: 0.9rem;
     width: 100%;
     margin: 20px 0 15px;
-    padding: 0 5px;
 }
 
 .contact p{
