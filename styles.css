@@ -39,7 +39,6 @@ header a img{
     width: 75%;
     height: 100%;
     align-items: center;
-    /* padding-right: 50px; */
     margin: auto 50px auto 0;
 }
 
@@ -51,6 +50,7 @@ header a img{
 
 
 .nav-links:hover > :not(:hover){
+    transition: all 0.5s ease;
     opacity: 0.3;
 }
 
@@ -133,7 +133,6 @@ main{
     font-size: 1rem;
     width: 70%;
     color: rgb(69, 69, 69);
-    /* padding-bottom: 25px; */
 }
 
 #side-nav{
@@ -145,7 +144,7 @@ main{
     z-index: 1;
     padding-top: 60px;
     right: -400px;
-    transition: 0.5s ease-in;
+    transition: 0.5s ease;
     box-shadow: 0px 0px 16px 1px;
     border-bottom-left-radius: 15px;
     display: none;
@@ -153,6 +152,7 @@ main{
 }
 
 #side-nav:hover > :not(:hover){
+    transition: all 0.5s ease;
     opacity: 0.3;
 }
 
@@ -164,6 +164,70 @@ main{
     color: white;
     text-decoration: none;
 }
+
+/* ------- research areas --------*/
+
+#research-areas{
+    width: 80%;
+    margin: 0 auto;
+    padding: 100px 0 40px;
+    border-bottom: 1px solid rgb(178, 176, 176);
+}
+
+#research-areas h2{
+    text-align: center;
+    font-size: 2rem;
+    color: #d9051b;
+    margin-bottom: 30px;
+}
+
+.area{
+    margin:0 50px 12px;
+}
+
+.research-head{
+    width: 100%;
+    height: fit-content;
+    background-color: #cbcaca;
+    padding: 5px 10px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.research-head p{
+    height: 100%;
+    padding: 2px;
+    float: right;
+}
+
+.research-head p img{
+    width: 20px;
+    height: 30px;
+}
+
+.area-content{
+    margin: 5px 0;
+    margin-left: 50px;
+    font-size: 0.9rem;
+    display: none;
+    
+}
+
+.research-head:hover{
+    cursor: pointer;
+}
+
+.area-content ol{
+    font-weight: 500;
+}
+
+.area-content ol ul{
+    margin-left: 20px;
+    color: #2f2e2e;
+    margin-bottom: 4px;
+}
+
 
 /* --------- about --------- */
 
