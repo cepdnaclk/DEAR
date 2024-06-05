@@ -519,6 +519,9 @@ main{
         justify-content: center;
         width: 97%;
     }
+    .area{
+        margin:0 10px 12px;
+    }
 
 
 }
@@ -540,6 +543,15 @@ main{
     }
     .card{
         width: 140px;
+    }
+    .area{
+        margin:0 0 12px;
+    }
+    .research-head h3{
+        font-size: 1rem;
+    }
+    #research-areas h2, #peoples h2, #references h2,.footer-about h2 {
+        font-size: 1.6rem;
     }
 }
 
