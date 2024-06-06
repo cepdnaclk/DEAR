@@ -193,6 +193,8 @@ main{
     border-radius: 12px;
     display: flex;
     justify-content: space-between;
+    pointer-events: auto;  
+    visibility: visible;   
 }
 
 .research-head p{
@@ -227,6 +229,7 @@ main{
     color: #2f2e2e;
     margin-bottom: 4px;
     list-style-type: lower-roman;
+    font-size: 0.8rem;
 }
 
 .area-content ol ol ol{
@@ -234,6 +237,7 @@ main{
     color: #2f2e2e;
     margin-bottom: 4px;
     list-style-type: lower-alpha;
+    font-size: 0.78rem;
 }
 
 
