@@ -28,7 +28,6 @@ header{
 .logo{
     width: 100%;
     height: 30%;
-    min-height: 200px;
 }
 .logo a{
     width: 100%;
@@ -37,12 +36,20 @@ header{
     align-items: center;
     justify-content: center;
 }
+.logo p{
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    display: none;
+}
 .logo img{
-    width: 60%;
+    width: 55%;
     border-radius: 50%;
     box-shadow: 0px 0px 15px 0px rgb(58, 58, 58);;
 }
-
+.webTitle{
+    font-size: 5rem;
+}
 .nav-links {
     display: flex;
     flex-direction: column;
@@ -54,7 +61,7 @@ header{
 .nav-links a{
     text-decoration: none;
     color: white;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 600;
 }
 
@@ -67,7 +74,7 @@ header{
 #drop-down-nav img{
     position : fixed;
     right: 20px;
-    top: 15px;
+    top: 10px;
     width: 35px;
     height: 55px;
     opacity: 0.7;
@@ -75,10 +82,11 @@ header{
 }
 
 main{
-    width: 80%;
-    position: absolute;
-    padding: 0 10px 0 40px;
-    right: 0;
+    /* width: 100%; */
+    margin-left: 23%;
+    /* position: absolute; */
+    padding: 0 10px 0 0;
+    /* right: 0; */
 }
 
 /* ------- top scroll button ----------*/
@@ -119,7 +127,7 @@ main{
 #home-page{
     /* width: 90%; */
     margin: 10px auto;
-    padding: 80px 0 70px;
+    padding: 100px 0 70px;
     border-bottom: 1px solid rgb(178, 176, 176);
 }
 
@@ -149,33 +157,32 @@ main{
 }
 
 #side-nav{
-    width: 35%;
-    min-width:250px ;
+    width: 0;
+    height: 100%;
+    max-width: 300px;
     position: fixed;
     background-color: #b20516;
     top: 80px;
+    right: 0;
     z-index: 1;
     padding-top: 60px;
-    right: -400px;
-    transition: 0.5s ease;
-    box-shadow: 0px 0px 16px 1px;
-    border-bottom-left-radius: 15px;
-    display: none;
+    transition: width 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
     text-align: center;
+    
 }
 
 #side-nav:hover > :not(:hover){
-    transition: all 0.5s ease;
+    transition: all 0.4s ease;
     opacity: 0.3;
-}
-
-#side-nav p{
-    padding: 0px 0px 35px 0px;
 }
 
 #side-nav a{
     color: white;
     text-decoration: none;
+    font-size: 1.2rem;
 }
 
 /* ------- research areas --------*/
@@ -183,7 +190,7 @@ main{
 #research-areas{
     /* width: 80%; */
     margin: 0 auto;
-    padding: 30px 40px 50px;
+    padding: 100px 0px 50px;
     border-bottom: 1px solid rgb(178, 176, 176);
 }
 
@@ -254,65 +261,12 @@ main{
 }
 
 
-/* --------- about --------- */
-
-#about{
-    width: 80%;
-    margin: 0 auto;
-    padding: 100px 0 40px;
-    border-bottom: 1px solid rgb(178, 176, 176);
-}
-
-#about h2{
-    text-align: center;
-    font-size: 2rem;
-    color: #d9051b;
-    margin-bottom: 30px;
-}
-
-.about-container{
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    /* flex-wrap: wrap; */
-}
-
-.about-image{
-    width: 50%;
-    min-width: 307px;
-    margin: 0 auto;
-}
-
-.about-image img{
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    filter: drop-shadow(1px 1px 5px rgb(67, 66, 66));
-    object-fit: cover;
-    background-position: center;
-}
-
-.about-content{
-    width: 48%;
-    padding: 10px 0 8px 20px;
-    min-width: 280px;
-}
-
-.about-content h3{
-    margin-bottom: 10px;
-}
-
-.about-content p{
-    margin-bottom: 8px ;
-    color: #2e2d2d;
-}
-
 /* ----------- people ----------*/
 
 #people{
     /* width: 85%; */
     margin: 20px auto;
-    padding: 30px 10px 40px ;
+    padding: 100px 0 40px ;
     border-bottom: 1px solid rgb(178, 176, 176);
 }
 
@@ -378,9 +332,9 @@ main{
 /* ----------- references ----------- */
 
 #references{
-    width: 80%;
+    /* width: 80%; */
     margin: 0px auto;
-    padding: 30px 0 50px;
+    padding: 100px 20px 50px 10px;
     border-bottom: 1px solid rgb(178, 176, 176);
 }
 
@@ -403,45 +357,19 @@ main{
 }
 
 
-/* ------- GUILDLINES -------- */
-
-#guidelines{
-    width: 80%;
-    margin: 0px auto;
-    padding: 100px 0 40px;
-    border-bottom: 1px solid rgb(178, 176, 176);
-}
-
-#guidelines h2{
-    color: #d20015;
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 2rem;
-}
-
-#guidelines ul{
-    padding-left: 20px;
-}
-
-#guidelines li{
-    margin-bottom: 8px;
-    color: #2e2d2d;
-}
 
 /* -------- FOOTER -----------*/
 
-.footer-contanier{
-    width: 100%;
+footer{
+    margin-left: 20%;
     text-align: center;
-    position: relative;
-    bottom: 0;
-    padding: 10px 0;
-    background-color: grey;
+    background-color: rgba(128, 128, 128, 0.682);
     min-width: 310px;
+    padding-bottom: 10px;
 }
 
 .footer-about{
-    margin: 20px 0;
+    padding: 20px 0;
 }
 .footer-about h2{
     margin-bottom: 15px;
@@ -478,32 +406,70 @@ main{
 }
 
 
-@media (max-width: 1024px){
-    .nav-links{
-        display: none;
-    }
-    
-    #drop-down-nav img{
-        display: inline-block;
-    }
-    
-    #side-nav{
-        display: inline-block;
-    }
-    #home-page{
-        padding-top: 120px;
-    }
+@media (max-width: 1024px){   
     #home-page h1{
         font-size: 55px;
     }
     #home-page h4{
         font-size: 18px;
     }
+
+    
 }
 
-@media (max-width: 768px){
+@media (max-width: 950px){
+    .nav-links{
+        display: none;
+    }
+    main{
+        width: 85%;
+        padding: 0;
+        margin: auto;
+    }
+    #drop-down-nav img{
+        display: inline-block;
+    }
     header{
         width: 100%;
+        height: 80px;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 15px;       
+    }
+    .logo{
+        width: 70px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .logo img{
+        width: 60px;
+    }
+    .logo p{
+        display: block;
+    }
+    footer{
+        width: 100%;
+        margin: auto;
+    }
+    #references{
+        padding-left: 10px;
+        padding-right: 0;
+    }
+    #home-page{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #home-page h1{
+        font-size: 2.3rem;
+        line-height: unset;
+    }
+}
+
+
+@media (max-width: 768px){
+    .webTitle{
+        font-size: 4rem;
     }
     #home-page h4{
         font-size: 15px;
@@ -511,51 +477,38 @@ main{
     #home-page p{
         font-size: 14px;
     }
-    header{
-        height: 80px;
-    }
-
-    header a img{
-        width: 100px;
-    }
-
-    #home-page{
-        margin: 10px auto 0px auto;
-        padding: 130px 3% 30px;
-    }
-
     #home-page h1{
-        font-size: 2.3rem;
+        font-size: 2rem;
         line-height: unset;
     }
-    .about{
-        padding-bottom: 0px;
+    #references h4{
+        font-size: 0.9rem;
     }
-    .about-container{
-        flex-wrap: wrap;
-    } 
-    .about-content{
-        width: fit-content;
-        padding-left: 0;
+    #references p{
+        font-size: 0.8rem;
     }
-    .about-image{
-        display: flex;
-        justify-content: center;
-        width: 97%;
+    .source p{
+        padding-left: 10px;
     }
     .area{
-        margin:0 10px 12px;
+        margin:0 0px 12px;
     }
 
 
 }
 
-@media (max-width: 425px){
+@media (max-width: 445px){
+    main{
+        width: 90%;
+    }
+    .webTitle{
+        font-size: 2.5rem;
+    }
     #home-page{
         padding-top: 140px;
     }
     #home-page h1{
-        font-size: 25px;
+        font-size: 20px;
     }
     #home-page h4{
         font-size: 13px;
@@ -592,17 +545,3 @@ main{
     }
 }
 
-@media (max-width: 320px){
-    #home-page h1{
-        font-size: 19px;
-        line-height: unset;
-    }
-    #home-page h4{
-        font-size: 9px;
-        width: 90%;
-    }
-    #home-page p{
-        font-size: 9px;
-        width: 90%;
-    }
-}
