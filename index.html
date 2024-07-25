@@ -35,8 +35,8 @@
                 <p><a class="links" href="#joinUs">JOIN US</a></p>
         </div>
 
-        <div id="drop-down-nav">
-            <img src="./assets/images/navigation-bar.png" alt="drop-down-nav-icon"  onclick="nav()">
+        <div id="drop-down-nav" onclick="nav()">
+            <img src="./assets/images/navigation-bar.png" alt="drop-down-nav-icon" >
         </div>
     </header>
 
@@ -73,7 +73,7 @@
             <div class="area" onclick="showdown('a-1')">
                 <div class="research-head" >
                     <h3>Theoretical advancements in Machine Learning </h3>
-                    <p><img src="https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/sort-arrows-icon.png" alt=""></p>
+                    <p><img src="https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/caret-down-icon.png" alt=""></p>
                 </div>
                 <div class="area-content" id="a-1">
                     <ol>
@@ -97,7 +97,7 @@
             <div class="area">
                 <div class="research-head" onclick="showdown('a-2')">
                     <h3>Computational Biology</h3>
-                    <p><img src="https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/sort-arrows-icon.png" alt=""></p>
+                    <p><img src="https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/caret-down-icon.png" alt=""></p>
                 </div>
                 <div class="area-content" id="a-2">
                     <ol>
@@ -153,7 +153,7 @@
             <div class="area">
                 <div class="research-head" onclick="showdown('a-3')">
                     <h3>Computer Vision </h3>
-                    <p><img src="https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/sort-arrows-icon.png" alt=""></p>
+                    <p><img src="https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/caret-down-icon.png" alt=""></p>
                 </div>
                 <div class="area-content" id="a-3">
                     <ol>
@@ -172,7 +172,7 @@
             <div class="area">
                 <div class="research-head" onclick="showdown('a-4')">
                     <h3>AI for Agriculture </h3>
-                    <p><img src="https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/sort-arrows-icon.png" alt=""></p>
+                    <p><img src="https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/caret-down-icon.png" alt=""></p>
                 </div>
                 <div class="area-content" id="a-4">
                     <ol>
@@ -188,7 +188,7 @@
             <div class="area">
                 <div class="research-head" onclick="showdown('a-5')">
                     <h3>Education</h3>
-                    <p><img src="https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/sort-arrows-icon.png" alt=""></p>
+                    <p><img src="https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/caret-down-icon.png" alt=""></p>
                 </div>
                 <div class="area-content" id="a-5">
                     <ol>
@@ -202,7 +202,7 @@
             <div class="area">
                 <div class="research-head" onclick="showdown('a-6')">
                     <h3>Transportation</h3>
-                    <p><img src="https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/sort-arrows-icon.png" alt=""></p>
+                    <p><img src="https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/caret-down-icon.png" alt=""></p>
                 </div>
                 <div class="area-content" id="a-6">
                     <ol>
@@ -214,7 +214,7 @@
             <div class="area">
                 <div class="research-head" onclick="showdown('a-7')">
                     <h3>Security</h3>
-                    <p><img src="https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/sort-arrows-icon.png" alt=""></p>
+                    <p><img src="https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/caret-down-icon.png" alt=""></p>
                 </div>
                 <div class="area-content" id="a-7">
                     <ol>
@@ -226,7 +226,7 @@
             <div class="area">
                 <div class="research-head" onclick="showdown('a-8')">
                     <h3>Collaborating with Mathematics</h3>
-                    <p><img src="https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/sort-arrows-icon.png" alt=""></p>
+                    <p><img src="https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/caret-down-icon.png" alt=""></p>
                 </div>
                 <div class="area-content" id="a-8">
                     <ol>
@@ -484,44 +484,7 @@
         </div>
     </footer>
 
-    <script>
-        let flag=0;
-        function nav(){
-            if (flag===0) {
-                document.getElementById('side-nav').style.width = "0px"
-                flag = 1
-            }else{
-                document.getElementById('side-nav').style.width = "50%"
-                flag = 0
-            }
-        }
-        
-        function goTop(){
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'});
-            }
-            
-            const scrollToTopBtn = document.getElementById("go-top");
-            window.onscroll = () => {
-                if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-                    scrollToTopBtn.style.display = "block";
-                } else {
-                    scrollToTopBtn.style.display = "none";
-                }
-            };
-            
-            
-            function showdown(val) {
-                let btn = document.getElementById(val)
-                if (btn.style.display === "none"){
-                    btn.style.display = "block"
-                }else{
-                    btn.style.display = "none"
-                }
-            }
-            
-            </script>
+<script src="./js//index.js"></script>
 
 </body>
 </html>
