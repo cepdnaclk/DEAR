@@ -356,6 +356,17 @@ main{
     font-size: 0.9rem;
 }
 
+/* --------- JOIN US ---------- */
+#joinUs{
+    padding: 100px 0;
+}
+
+#joinUs h2{
+    color: #d20015;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
 
 
 /* -------- FOOTER -----------*/
@@ -493,8 +504,8 @@ footer{
     .area{
         margin:0 0px 12px;
     }
-
-
+    
+    
 }
 
 @media (max-width: 445px){
@@ -527,8 +538,11 @@ footer{
     .research-head h3{
         font-size: 1rem;
     }
-    #research-areas h2, #peoples h2, #references h2,.footer-about h2 {
+    #research-areas h2, #peoples h2, #references h2,.footer-about h2, #joinUs h2 {
         font-size: 1.6rem;
+    }
+    #joinUs p{
+        font-size: 0.9rem;
     }
 }
 
