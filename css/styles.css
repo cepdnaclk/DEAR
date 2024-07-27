@@ -369,6 +369,8 @@ main{
 /* --------- JOIN US ---------- */
 #joinUs{
     padding: 100px 0;
+    border-bottom: 1px solid rgb(178, 176, 176);
+    
 }
 
 #joinUs h2{
@@ -377,6 +379,62 @@ main{
     margin-bottom: 30px;
     font-size: 2rem;
 }
+#joinUs p{
+    color: #414141;
+    margin-bottom: 15px;
+}
+#joinUs p a{
+    color: #b20516;
+    text-decoration: none;
+    font-weight: 600;
+}
+#joinUs p a:hover{
+    text-decoration: underline;
+}
+.whatsappLink a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.whatsappLink a{
+    text-decoration: none;
+    color: rgb(22, 185, 22);
+}
+.whatsappLink a:hover{
+    text-decoration: underline;
+}
+
+/* ---------- WEB MASTERS -------- */
+#webmasters{
+    padding: 100px 0;
+}
+#webmasters a{
+    text-decoration: none;
+    color: #b20516;
+}
+#webmasters a:hover{
+    text-decoration: underline;
+}
+#webmasters h2{
+    color: #d20015;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+.webmasters-info{
+    color: #414141;
+    margin-bottom: 15px;
+}
+.webUpdateDate{
+    color: #414141;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.concerns{
+    color: #414141;
+}
+
 
 
 /* -------- FOOTER -----------*/
