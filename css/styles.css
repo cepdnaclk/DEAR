@@ -606,10 +606,13 @@ footer{
     .research-head h3{
         font-size: 1rem;
     }
-    #research-areas h2, #peoples h2, #references h2,.footer-about h2, #joinUs h2 {
+    #research-areas h2, #peoples h2, #references h2,.footer-about h2, #joinUs h2, #webmasters h2 {
         font-size: 1.6rem;
     }
     #joinUs p{
+        font-size: 0.9rem;
+    }
+    #webmasters p{
         font-size: 0.9rem;
     }
 }
