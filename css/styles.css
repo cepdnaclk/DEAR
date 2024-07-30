@@ -227,6 +227,11 @@ main{
     padding: 2px;
     float: right;
 }
+#research-areas .viewBox{
+    height: 320px;
+    overflow: scroll;
+    padding: 15px 8px 15px 15px;
+}
 
 .research-head p img{
     margin-top: 0px;
@@ -259,7 +264,7 @@ main{
 
 .area-content ol ol ol{
     margin-left: 20px;
-    color: #2f2e2e;
+    color: #074f72;
     margin-bottom: 4px;
     list-style-type: lower-alpha;
     font-size: 0.78rem;
@@ -297,7 +302,7 @@ main{
 }
 
 .card{
-    max-width: 160px;
+    max-width: 150px;
     min-width: 120px;
     border: 1px solid rgb(138, 136, 136);
     border-radius: 8px;
@@ -361,8 +366,7 @@ main{
     font-size: 0.9rem;
 }
 .viewBox{
-    height: 450px;
-    /* background-color: #f6f6f6; */
+    height: 420px;
     overflow: scroll;
     padding: 15px 5px 15px 20px;
 }
@@ -371,7 +375,6 @@ main{
 #joinUs{
     padding: 100px 0;
     border-bottom: 1px solid rgb(178, 176, 176);
-    
 }
 
 #joinUs h2{
@@ -380,18 +383,57 @@ main{
     margin-bottom: 30px;
     font-size: 2rem;
 }
-#joinUs p{
+
+.joinUs-initial p{
     color: #414141;
-    margin-bottom: 15px;
 }
+
+#joinUs p, #joinUs li{
+    margin-bottom: 10px;
+}
+
 #joinUs p a{
     color: #b20516;
     text-decoration: none;
     font-weight: 600;
 }
+
 #joinUs p a:hover{
     text-decoration: underline;
 }
+
+.whyToJoin, .howToJoin{
+    margin-top: 30px;
+}
+
+.howToJoin h4{
+    margin-bottom: 10px;
+}
+
+.whyToJoin ul{
+    color: #414141;
+    margin-left: 10px;
+    list-style-type: square;
+}
+
+#joinUs .viewBox{
+    height: fit-content;
+    overflow: scroll;
+    padding: 15px 5px 5px 20px;
+    font-size: 0.9rem;
+}
+
+.howToJoin ul{
+    color: #414141;
+    margin-left: 25px;
+    list-style-type: none;
+}
+
+.emailLink a{
+    text-decoration: none;
+    color: #b20516;
+}
+
 .whatsappLink a{
     display: flex;
     align-items: center;
@@ -404,6 +446,23 @@ main{
 }
 .whatsappLink a:hover{
     text-decoration: underline;
+}
+.motto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 30px 0 20px;
+    border-left: 5px solid #b20516;
+    background-color: #eaeaea;
+    padding: 15px 0 10px;
+    color: rgb(62, 122, 171)
+}
+.motto p{
+    margin-bottom: unset;
+}
+.joinUs-para p{
+    color: #414141;
 }
 
 /* ---------- WEB MASTERS -------- */
@@ -573,7 +632,15 @@ footer{
     .area{
         margin:0 0px 12px;
     }
-    
+    .card{
+        max-width: 130px;
+    }
+    #joinUs .viewBox{
+        height: 300px;
+        overflow: scroll;
+        padding: 15px 5px 5px 20px;
+        font-size: 0.9rem;
+    }
     
 }
 
@@ -615,6 +682,9 @@ footer{
     }
     #webmasters p{
         font-size: 0.9rem;
+    }
+    #joinUs p, .howToJoin li{
+        font-size: 0.8rem;
     }
 }
 
