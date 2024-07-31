@@ -330,7 +330,7 @@ main{
     display: block;
     background-color: #3a3a3a;
     margin: 0px 10px 5px;
-    color: #80ff79;
+    color: #ffffff;
     border-radius: 0 0 8px 8px;
     padding-left: 30px;
     font-size: 0.95rem;
@@ -348,11 +348,13 @@ main{
 }
 
 .area-content ol ol{
-    margin-left: 20px;
-    color: #ffffff;
+    padding: 10px 5px 8px 18px;
+    color: #1b1a1a;
     margin-bottom: 4px;
     list-style-type: lower-roman;
     font-size: 0.85rem;
+    background-color: #e4e4e4;
+    border-radius: 8px
 }
 .area-content ol ol li{
     margin-bottom: 2px;
@@ -360,7 +362,7 @@ main{
 
 .area-content ol ol ol{
     margin-left: 20px;
-    color: #9ef4ee;
+    color: #0c524d;
     margin-bottom: 4px;
     list-style-type: lower-alpha;
     font-size: 0.8rem;
