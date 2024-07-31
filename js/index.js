@@ -25,11 +25,16 @@ function goTop(){
     };
     
     
-function showdown(val,e) {
+function showdown(val) {
     
-    closeShowDown()
     const btn = document.getElementById(val)
-    btn.style.display = "block"
+
+    if (btn.style.display === "none") {
+        closeShowDown();
+        btn.style.display = "block";
+    }else{
+        btn.style.display = "none"
+    }
 }
 
 function closeShowDown() {
