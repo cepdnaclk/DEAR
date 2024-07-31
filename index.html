@@ -66,6 +66,27 @@
             <p><a class="links" href="#webmasters">WEB MASTERS</a></p>
         </div>
 
+
+        <!-- IMAGE SLIDER -->
+        <div class="imageSlider">
+            <div class="slides">
+                <div class="slide">
+                    <div class="previous" onclick="previousImage()">&#10094;</div>
+                    <img src="https://cdna.artstation.com/p/assets/images/images/029/996/332/large/emilio-r-camarena-emkun-paisaje3.jpg?1599263064" alt="slide1" id="image">
+                    <div class="next" onclick="nextImage()">&#10095;</div>
+                </div>
+
+                <div class="dots">
+                    <span class="dot active" onclick="selectImage(1)"></span>
+                    <span class="dot" onclick="selectImage(2)"></span>
+                    <span class="dot" onclick="selectImage(3)"></span>
+                </div>
+            </div>
+
+            <p class="seemore">see more &#10230</p>
+        </div>
+
+
         <!-- RESEARCH AREAS -->
         <div id="research-areas">
             <h2>RESEARCH AREAS</h2>
@@ -95,14 +116,14 @@
             </div>
             
             <div class="area">
-                <div class="research-head" onclick="showdown('a-2')">
+                <div class="research-head" onclick="showdown('a-2',event)">
                     <h3>Computational Biology</h3>
                     <p><img src="https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/caret-down-icon.png" alt=""></p>
                 </div>
-                <div class="area-content" id="a-2">
-                    <div class="viewBox">
+                <div class="area-content" id="a-2" style="padding-left: 0;">
+                    <!-- <div class="viewBox"> -->
 
-                        <ol>
+                        <ol class="scollable">
                             <li>Machine learning for comparative analysis of metagenomic samples </li>
                         <li>Biomarker identification for Alzhemizers disease using DNA sequencing data [1,2]</li>
                         <li>Automated Protein function prediction using Machine Learning techniques</li>
@@ -149,7 +170,7 @@
                             </ol>
                         </li>
                         </ol>
-                    </div>
+                    <!-- </div> -->
                 </div>
             </div>
             
