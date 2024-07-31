@@ -29,11 +29,11 @@ function showdown(val) {
     
     const btn = document.getElementById(val)
 
-    if (btn.style.display === "none") {
+    if (btn.classList.contains("hidden")) {
         closeShowDown();
-        btn.style.display = "block";
+        btn.classList.remove("hidden")
     }else{
-        btn.style.display = "none"
+        btn.classList.add("hidden");
     }
 }
 
@@ -41,7 +41,7 @@ function closeShowDown() {
     const areas = document.querySelectorAll(".area-content");
 
     areas.forEach((area) => {
-        area.style.display = "none";
+        area.classList.add("hidden");
     });
 }
 

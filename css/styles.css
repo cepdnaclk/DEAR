@@ -327,7 +327,7 @@ main{
 
 .area-content{
     padding: 15px 8px 15px 30px;
-    display: none;
+    display: block;
     background-color: #3a3a3a;
     margin: 0px 10px 5px;
     color: #80ff79;
@@ -369,6 +369,10 @@ main{
 .area-content ol li{
     margin-bottom: 5px;
 }
+.hidden{
+    display: none;
+}
+
 
 /* ----------- people ----------*/
 
