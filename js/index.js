@@ -26,18 +26,19 @@ function goTop(){
     
     
 function showdown(val,e) {
+    
+    closeShowDown()
+    const btn = document.getElementById(val)
+    btn.style.display = "block"
+}
 
+function closeShowDown() {
     const areas = document.querySelectorAll(".area-content");
 
     areas.forEach((area) => {
         area.style.display = "none";
     });
-    
-    const btn = document.getElementById(val)
-    btn.style.display = "block"
-
 }
-
 
 // image slider fuctionality
 let sliderImages = [
