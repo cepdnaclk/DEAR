@@ -536,7 +536,7 @@ main{
 
 #joinUs .viewBox{
     height: fit-content;
-    overflow: scroll;
+    overflow-y: auto;
     padding: 15px 5px 5px 20px;
     font-size: 0.9rem;
 }
@@ -706,7 +706,7 @@ footer{
 .update-content{
     color: #313131;
     max-height: 250px;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 .update-content a{
     text-decoration: none;
@@ -810,7 +810,7 @@ footer{
     }
     #joinUs .viewBox{
         height: 300px;
-        overflow: scroll;
+        overflow-y: auto;
         padding: 15px 5px 5px 20px;
         font-size: 0.9rem;
     }
