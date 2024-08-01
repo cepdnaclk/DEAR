@@ -24,12 +24,12 @@
             </a>
             <p>DEAR</p>
         </div>
-
+        
         <div class="nav-links">
                 <p><a class="links" href="#home-page">HOME</a></p>
+                <p><a class="links" href="#recent-updates">RECENT UPDATES</a></p>
                 <p><a class="links" href="#research-areas">RESEARCH AREAS</a></p>
                 <p><a class="links" href="#people">PEOPLE</a></p>
-                <!-- <p><a class="links" href="">NEWS</a></p> -->
                 <p><a class="links" href="#references">REFERENCES</a></p>
                 <p><a class="links" href="#joinUs">JOIN US</a></p>
                 <p><a class="links" href="#webmasters">WEB MASTERS</a></p>
@@ -58,39 +58,40 @@
 
         <div id="side-nav">
             <p><a onclick="nav()" class="links" href="#home-page">HOME</a></p>
+            <p><a onclick="nav()" class="links" href="#recent-updates">RECENT UPDATES</a></p>
             <p><a onclick="nav()" class="links" href="#research-areas">RESEARCH AREAS</a></p>
             <p><a onclick="nav()" class="links" href="#people">PEOPLE</a></p>
-            <!-- <p><a onclick="nav()" class="links" href="">NEWS</a></p> -->
             <p><a onclick="nav()" class="links" href="#references">REFERENCES</a></p>
             <p><a onclick="nav()" class="links" href="#joinUs">JOIN US</a></p>
-            <p><a class="links" href="#webmasters">WEB MASTERS</a></p>
+            <p><a onclick="nav()" class="links" href="#webmasters">WEB MASTERS</a></p>
         </div>
-
-
+        
+        
         <!-- IMAGE SLIDER -->
-        <div class="imageSlider">
+        <div id="recent-updates">
+            <h2>RECENT UPDATES</h2>
             <div class="slides">
                 <div class="slide">
                     <div class="previous" onclick="previousImage()">&#10094;</div>
-                    <img src="https://cdna.artstation.com/p/assets/images/images/029/996/332/large/emilio-r-camarena-emkun-paisaje3.jpg?1599263064" alt="slide1" id="image">
+                    <img src="../assets/images/imageSlider/1.jpg" alt="slide1" id="image">
                     <div class="next" onclick="nextImage()">&#10095;</div>
                 </div>
-
+                
                 <div class="dots">
                     <span class="dot active" onclick="selectImage(1)"></span>
                     <span class="dot" onclick="selectImage(2)"></span>
                     <span class="dot" onclick="selectImage(3)"></span>
                 </div>
             </div>
-
-            <p class="seemore">see more &#10230</p>
+            
+            <a href="./recentUpdates/recentUpdates.html" class="seemore">See more &#10230</a>
         </div>
-
-
+        
+        
         <!-- RESEARCH AREAS -->
         <div id="research-areas">
             <h2>RESEARCH AREAS</h2>
-
+            
             <div class="area"  >
                 <div class="research-head" onclick="showdown('a-1')">
                     <h3>Theoretical advancements in Machine Learning </h3>
@@ -121,9 +122,9 @@
                     <p><img src="https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/caret-down-icon.png" alt=""></p>
                 </div>
                 <div class="area-content hidden" id="a-2" style="padding-left: 0;">
-
-                        <ol class="scollable">
-                            <li>Machine learning for comparative analysis of metagenomic samples </li>
+                    
+                    <ol class="scollable">
+                        <li>Machine learning for comparative analysis of metagenomic samples </li>
                         <li>Biomarker identification for Alzhemizers disease using DNA sequencing data [1,2]</li>
                         <li>Automated Protein function prediction using Machine Learning techniques</li>
                         <li>Interpretable ML in inference from sequencing data [8]</li>

@@ -14,7 +14,7 @@ body{
 header{
     width: 20%;
     height: 100%;
-    /* min-width: 200px; */
+    /* background: linear-gradient(180deg, #c70014,rgb(255, 1, 1),rgb(197, 3, 3)); */
     background-color: #b20516;
     position: fixed;
     z-index: 5;
@@ -167,7 +167,7 @@ main{
     height: 100%;
     max-width: 300px;
     position: fixed;
-    background-color: #b20516;
+    background-color: #201f1f;
     top: 80px;
     right: 0;
     z-index: 1;
@@ -175,7 +175,7 @@ main{
     transition: width 0.5s ease;
     display: flex;
     flex-direction: column;
-    gap: 45px;
+    gap: 30px;
     text-align: center;
     
 }
@@ -193,13 +193,21 @@ main{
 
 
 /* -------- IMAGE SLIDER --------- */
-.imageSlider{
+
+#recent-updates{
     padding: 50px 0px;
     border-bottom: 1px solid rgb(178, 176, 176);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+#recent-updates h2{
+    text-align: center;
+    font-size: 2rem;
+    color: #d9051b;
+    margin-bottom: 30px;
+}
+
 .slides{
     position: relative;
     width: 90%;
@@ -259,6 +267,10 @@ main{
     background-color: #dadada81;
     color: #000000;
 }
+.previous:active, .next:active{
+    color: white;
+    background-color: unset;
+}
 .previous{
     left: 10px;
 }
@@ -270,6 +282,7 @@ main{
     font-size: 20px;
     color: #067ebf;
     cursor: pointer;
+    text-decoration: none;
 }
 .seemore:hover{
     color: #024160;
@@ -649,6 +662,16 @@ footer{
     font-size: 0.8rem;
 }
 
+/* -----  updates ------ */
+.updates{
+    margin: 10px auto;
+    padding: 100px 20px 50px 10px;
+}
+.updates div{
+    background-color: #adc1cc;
+    height: 500px;
+}
+
 
 @media (max-width: 1024px){   
     #home-page h1{
@@ -786,7 +809,7 @@ footer{
     .research-head h3{
         font-size: 1rem;
     }
-    #research-areas h2, #peoples h2, #references h2,.footer-about h2, #joinUs h2, #webmasters h2 {
+    #research-areas h2, #peoples h2, #references h2,.footer-about h2, #joinUs h2, #webmasters h2, #recent-updates h2 {
         font-size: 1.6rem;
     }
     #joinUs p{
