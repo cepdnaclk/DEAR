@@ -700,8 +700,10 @@ footer{
     border-left: 4px solid rgb(221, 5, 5);
     padding: 2px 8px;
 }
-.update-content{
+.update-content-wrapper{
     padding: 10px 15px;
+}
+.update-content{
     color: #313131;
     max-height: 250px;
     overflow-y: scroll;
