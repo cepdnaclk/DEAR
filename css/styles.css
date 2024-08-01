@@ -667,10 +667,50 @@ footer{
     margin: 10px auto;
     padding: 100px 20px 50px 10px;
 }
-.updates div{
-    background-color: #adc1cc;
-    height: 500px;
+.updates h2{
+    color: #d20015;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
 }
+.update-card{
+    font-size: 1rem;
+    margin: auto;
+    width: 90%;
+    height: fit-content;
+    border-radius: 8px;
+    border: 1px solid #c2c2c2;
+    position: relative;
+    box-shadow: 2px 2px 10px  #b0b0b0;
+}
+.update-card img{
+    border-radius: 8px;
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    box-shadow: 0 2px 9px rgb(143, 143, 143);
+}
+.update-date{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.357);
+    border-radius: 0 5px 5px 0;
+    border-left: 4px solid rgb(221, 5, 5);
+    padding: 2px 8px;
+}
+.update-content{
+    padding: 10px 15px;
+    color: #313131;
+    max-height: 250px;
+    overflow-y: scroll;
+}
+.update-content a{
+    text-decoration: none;
+    color:#b20516;
+}
+
 
 
 @media (max-width: 1024px){   
@@ -776,6 +816,13 @@ footer{
         height: 300px;
         width: 100%;
     }
+    .updates{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .update-card{
+        width: 100%;
+    }
     
 }
 
@@ -823,6 +870,9 @@ footer{
     }
     .slides{
         height: 200px;
+    }
+    .update-card{
+        font-size: 0.85rem;
     }
 }
 
