@@ -856,7 +856,7 @@ footer{
     .research-head h3{
         font-size: 1rem;
     }
-    #research-areas h2, #peoples h2, #references h2,.footer-about h2, #joinUs h2, #webmasters h2, #recent-updates h2 {
+    #research-areas h2, #peoples h2, #references h2,.footer-about h2, #joinUs h2, #webmasters h2, #recent-updates h2, .updates h2 {
         font-size: 1.6rem;
     }
     #joinUs p{
