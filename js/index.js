@@ -47,9 +47,9 @@ function closeShowDown() {
 
 // image slider fuctionality
 let sliderImages = [
-    '../assets/images/imageSlider/1.jpg',
-    '../assets/images/imageSlider/2.jpg',
-    '../assets/images/imageSlider/3.jpg',
+    '../assets/images/imageSlider/1.JPG',
+    '../assets/images/imageSlider/2.JPG',
+    '../assets/images/imageSlider/3.JPG',
 ]
 
 const image = document.getElementById('image')
