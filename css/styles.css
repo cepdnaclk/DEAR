@@ -303,6 +303,13 @@ main{
     color: #d9051b;
     margin-bottom: 30px;
 }
+#research-areas h4{
+    background-color: rgb(253, 211, 211);
+    padding: 14px 8px;
+    border-left: 5px solid rgb(221, 5, 5);
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
 
 .area{
     margin:0 50px 12px;
@@ -648,19 +655,6 @@ footer{
     margin: 0px 10px;
 }
 
-.contact{
-    font-size: 0.9rem;
-    width: 100%;
-    margin: 20px 0 15px;
-}
-
-.contact p{
-    margin-top: 4px;
-}
-
-.copyright p{
-    font-size: 0.8rem;
-}
 
 /* -----  updates ------ */
 .updates{
