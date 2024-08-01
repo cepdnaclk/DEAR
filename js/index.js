@@ -45,6 +45,7 @@ function closeShowDown() {
     });
 }
 
+
 // image slider fuctionality
 let sliderImages = [
     './assets/images/imageSlider/1.jpg',
