@@ -4,18 +4,60 @@
     box-sizing: border-box;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#research-main{
+    /* width: 80%; */
+    margin: 0 auto;
+    padding: 100px 0px 50px;
+    border-bottom: 1px solid rgb(178, 176, 176);
+}
+
+#research-main h2{
+    text-align: center;
+    font-size: 2rem;
+    color: #8b010f;
+    margin-bottom: 30px;
+}
+
+
+.collapsible {
+    font-family: 'Poppins', sans-serif;
+}
+
+.collapsible * {
+    font-family: inherit;
+}
+
 body{
-    background-color: rgba(242, 242, 242, 0.578);
+    background-color: #fff5e1;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    font-style: normal; 
+    font-style: normal;
+    color: rgb(24, 24, 24);
 }
 
 header{
     width: 20%;
     height: 100%;
     /* background: linear-gradient(180deg, #c70014,rgb(255, 1, 1),rgb(197, 3, 3)); */
-    background-color: #b20516;
+    background-color: #6a0d1a;
     position: fixed;
     z-index: 5;
     top: 0;
@@ -62,7 +104,7 @@ header{
 
 .nav-links a{
     text-decoration: none;
-    color: white;
+    color: rgb(250, 250, 250);
     font-size: 1.2rem;
     font-weight: 600;
 }
@@ -89,9 +131,9 @@ header{
 
 main{
     /* width: 100%; */
-    margin-left: 23%;
+    margin-left: 20%;
     /* position: absolute; */
-    padding: 0 10px 0 0;
+    padding: 0 0 0 0;
     /* right: 0; */
 }
 
@@ -113,7 +155,7 @@ main{
 
 #go-top p{
     text-align: center;
-    color: white;
+    color: rgb(245, 245, 245);
     font-size: 1.9rem;
 }
 
@@ -135,6 +177,11 @@ main{
     margin: 10px auto;
     padding: 100px 0 70px;
     border-bottom: 1px solid rgb(178, 176, 176);
+    position: relative;
+    padding: 60px 20px;
+    color: #2e2d2d;
+    z-index: 1;
+    overflow: hidden;
 }
 
 #home-page h1{
@@ -148,7 +195,7 @@ main{
 #home-page h4{
     font-size: 1.2rem;
     width: 100%;
-    color: #d20015;
+    color: #8b010f;
     padding-bottom: 10px;
 }
 
@@ -186,7 +233,7 @@ main{
 }
 
 #side-nav a{
-    color: white;
+    color: rgb(245, 245, 245);
     text-decoration: none;
     font-size: 1.2rem;
 }
@@ -204,11 +251,11 @@ main{
 #recent-updates h2{
     text-align: center;
     font-size: 2rem;
-    color: #d9051b;
+    color: #8b010f;
     margin-bottom: 30px;
 }
 
-.slides{
+/* .slides{
     position: relative;
     width: 90%;
     height: 420px;
@@ -276,7 +323,86 @@ main{
 }
 .next{
     right: 10px;
+} */
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(245, 245, 245);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(8, 8, 8, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.activee, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
 .seemore{
     margin-top: 20px;
     font-size: 20px;
@@ -300,7 +426,7 @@ main{
 #research-areas h2{
     text-align: center;
     font-size: 2rem;
-    color: #d9051b;
+    color: #8b010f;
     margin-bottom: 30px;
 }
 
@@ -312,7 +438,7 @@ main{
     transition: display 0.5s ease;
     width: 100%;
     height: fit-content;
-    background-color: #dededec0;
+    background-color: bbbbbbc0;
     padding: 5px 10px;
     border-radius: 12px;
     display: flex;
@@ -402,7 +528,7 @@ main{
     font-size: 2rem;
     text-align: center;
     margin-bottom: 20px;
-    color:#d20015;
+    color:#8b010f;
 }
 
 .cards{
@@ -467,7 +593,7 @@ main{
 }
 
 #references h2{
-    color: #d20015;
+    color: #8b010f;
     text-align: center;
     margin-bottom: 20px;
     font-size: 2rem;
@@ -484,7 +610,7 @@ main{
     font-size: 0.9rem;
 }
 .viewBox{
-    height: 420px;
+    height: 580px;
     overflow-y: scroll;
     padding: 15px 5px 15px 20px;
 }
@@ -496,7 +622,7 @@ main{
 }
 
 #joinUs h2{
-    color: #d20015;
+    color: #8b010f;
     text-align: center;
     margin-bottom: 30px;
     font-size: 2rem;
@@ -511,7 +637,7 @@ main{
 }
 
 #joinUs p a{
-    color: #b20516;
+    color: #8b010f;
     text-decoration: none;
     font-weight: 600;
 }
@@ -549,7 +675,7 @@ main{
 
 .emailLink a{
     text-decoration: none;
-    color: #b20516;
+    color: #8b010f;
 }
 
 .whatsappLink a{
@@ -571,7 +697,7 @@ main{
     justify-content: center;
     text-align: center;
     margin: 30px 0 20px;
-    border-left: 5px solid #b20516;
+    border-left: 5px solid #8b010f;
     background-color: #eaeaea;
     padding: 15px 0 10px;
     color: #067ebf;
@@ -589,13 +715,13 @@ main{
 }
 #webmasters a{
     text-decoration: none;
-    color: #b20516;
+    color: #8b010f;
 }
 #webmasters a:hover{
     text-decoration: underline;
 }
 #webmasters h2{
-    color: #d20015;
+    color: #8b010f;
     text-align: center;
     margin-bottom: 30px;
     font-size: 2rem;
@@ -613,6 +739,51 @@ main{
     color: #414141;
 }
 
+/* -------- collapsible -----------*/
+
+.collapsible {
+  background-color: #bbbbbbc0;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding: 5px 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18.6px;
+  border:1px solid #e7e7e7c0;
+  border-radius: 10px;
+}
+
+.active, .collapsible:hover {
+  background-color: #a7a7a7c0;
+  border:1px solid #e7e7e7c0;
+  border-radius: 10px;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #e4e4e4c0;
+  color: rgb(19, 19, 19);
+  border-radius: 10px;
+  margin-bottom: 4px;
+}
+
 
 
 /* -------- FOOTER -----------*/
@@ -620,7 +791,7 @@ main{
 footer{
     margin-left: 20%;
     text-align: center;
-    background-color: rgba(128, 128, 128, 0.682);
+    background-color: rgba(102, 102, 102, 0.8);
     min-width: 310px;
     padding-bottom: 10px;
 }
@@ -634,7 +805,7 @@ footer{
 }
 
 .footer-about a{
-    color: white;
+    color: rgb(248, 248, 248);
     text-decoration: none;
 }
 
@@ -670,6 +841,12 @@ footer{
 .updates div{
     background-color: #adc1cc;
     height: 500px;
+}
+
+@media screen and (max-width: 950px) {
+  .column {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
 }
 
 

@@ -13,6 +13,9 @@
     />
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="shortcut icon" href="./assets/images/gold-badge-university-of-ceylon-university-of-sri-lanka-higher-education-college-faculty-university-of-peradeniya-logo-png-clipart.jpg" type="image/x-icon" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -26,13 +29,14 @@
         </div>
         
         <div class="nav-links">
-                <p><a class="links" href="#home-page">HOME</a></p>
-                <p><a class="links" href="#recent-updates">RECENT UPDATES</a></p>
-                <p><a class="links" href="#research-areas">RESEARCH AREAS</a></p>
-                <p><a class="links" href="#people">PEOPLE</a></p>
-                <p><a class="links" href="#references">REFERENCES</a></p>
-                <p><a class="links" href="#joinUs">JOIN US</a></p>
-                <p><a class="links" href="#webmasters">WEB MASTERS</a></p>
+                <p><a class="links" href="#home-page"><i class="fa-solid fa-house"></i> HOME</a></p>
+                <p><a class="links" href="#recent-updates"><i class="fas fa-bell"></i> RECENT UPDATES</a></p>
+                <p><a class="links" href="#research-areas"><i class="fas fa-flask"></i> RESEARCH AREAS</a></p>
+                <p><a class="links" href="#research-main"><i class="fa-solid fa-star"></i> FEATURED RESEARCH</a></p>
+                <p><a class="links" href="#people"><i class="fas fa-users"></i> PEOPLE</a></p>
+                <p><a class="links" href="#references"><i class="fas fa-book"></i> REFERENCES</a></p>
+                <p><a class="links" href="#joinUs"><i class="fas fa-user-plus"></i> JOIN US</a></p>
+                <p><a class="links" href="#webmasters"><i class="fas fa-code"></i> WEB MASTERS</a></p>
         </div>
 
         <div id="drop-down-nav" onclick="nav()">
@@ -49,15 +53,31 @@
         </div>
 
         <!-- HOME -->
-        <div id="home-page">
-            <h1 class="heading"><span class="webTitle" style="color: #d20015;">DEAR</span><br> (<span style="color: #d20015;" >D</span>ATA <span style="color: #d20015;">E</span>NGINEERING <span style="color: #d20015;">A</span>ND <span style="color: #d20015;">R</span>ESEARCH) GROUP <br>UNIVERSITY OF PERADENIYA</h1>
-            <h4>DEPARTMENT OF COMPUTER ENGINEERING, FACULTY OF ENGINEERING, UNIVERSITY OF PERADENIYA, PERADENIYA, SRI LANKA. <br>
-                <span style="color: #2e2d2d;">Contact:</span> <a href="mailto:damayanthiherath@eng.pdn.ac.lk">damayanthiherath@eng.pdn.ac.lk</a></h4>
-            <p>We are a research group consisting of faculty, students and external collaborators trying to push the boundaries of data engineering and research.Its a friendly place for all enthusiasts share and learn Data Engineering. We operate similar to a reading group with Cake!!</p>
+        <div id="home-page" style="background-image: url('assets/images/pera.jpg'); margin-top: 0px; width: 100%; height: 100%; background-size: cover; background-position: center; display: flex; justify-content: center; align-items: center; padding: 40px 20px;">
+        <div style="background-color: rgba(245, 245, 245, 0.32); backdrop-filter: blur(6px); padding: 60px 20px; border-radius: 12px; width: 100%; max-width: 1080px;">
+            <h1 class="heading" style="color: rgb(20, 20, 20); text-align: center;padding-top: 40px;">
+            <span class="webTitle" style="color: #af0012; font-size: 84px; font-weight: bold;">DEAR</span><br>
+            <span style="color: #d20015;">D</span>ATA <span style="color: #d20015;">E</span>NGINEERING <span style="color: #d20015;">A</span>ND <span style="color: #d20015;">R</span>ESEARCH GROUP<br>
+            <span style="font-size: 32px;">UNIVERSITY OF PERADENIYA</span>
+            </h1>
+
+            <h4 style="text-align: center; color: #944700;">
+            DEPARTMENT OF COMPUTER ENGINEERING, FACULTY OF ENGINEERING, UNIVERSITY OF PERADENIYA, SRI LANKA.
+            </h4>
+
+            <div style="padding: 0 12px; text-align: justify;">
+            <p style="color: #292929; font-size: 18px;width: 100%;">
+                We are a research group consisting of faculty members, students, and external collaborators working to push the boundaries of data engineering and research. It’s a friendly space for all enthusiasts to share and learn about data engineering. We operate similarly to a reading group with cake!
+            </p>
+            <p style="color: #292929;padding-bottom: 10px;font-size: 18px;">
+                <strong>Contact:</strong> <a href="mailto:damayanthiherath@eng.pdn.ac.lk">damayanthiherath@eng.pdn.ac.lk</a>
+            </p>
+            </div>
+        </div>
         </div>
 
         <div id="side-nav">
-            <p><a onclick="nav()" class="links" href="#home-page">HOME</a></p>
+            <p><a onclick="nav()" class="links" href="#home-page"><i class="fa-solid fa-house"></i> HOME</a></p>
             <p><a onclick="nav()" class="links" href="#recent-updates">Past Events</a></p>
             <p><a onclick="nav()" class="links" href="#research-areas">RESEARCH AREAS</a></p>
             <p><a onclick="nav()" class="links" href="#people">PEOPLE</a></p>
@@ -66,12 +86,15 @@
             <p><a onclick="nav()" class="links" href="#webmasters">WEB MASTERS</a></p>
         </div>
         
-        
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+
         <!-- IMAGE SLIDER -->
         <div id="recent-updates">
             <h2>RECENT UPDATES</h2>
             <div class="slides">
-                <div class="slide">
+                <!-- <div class="slide">
                     <div class="previous" onclick="previousImage()">&#10094;</div>
                     <img src="assets/images/imageSlider/1.jpg" alt="slide" id="image">
                     <img src="assets/images/imageSlider/2.jpg" alt="slide" id="image">
@@ -83,6 +106,37 @@
                     <span class="dot active" onclick="selectImage(1)"></span>
                     <span class="dot" onclick="selectImage(2)"></span>
                     <span class="dot" onclick="selectImage(3)"></span>
+                </div> -->
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="assets/images/imageSlider/1.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="assets/images/imageSlider/2.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="assets/images/imageSlider/3.jpg" style="width:100%">
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
                 </div>
             </div>
             
@@ -91,178 +145,206 @@
         
         
         <!-- RESEARCH AREAS -->
-        <div id="research-areas">
+        <div id="research-areas" style="padding-left: 28px;padding-right: 28px;">
             <h2>RESEARCH AREAS</h2>
-            <p>This is a non exhaustive list of our ongoing projects.</p>p
-            <div class="area"  >
-                <div class="research-head" onclick="showdown('a-1')">
-                    <h3>Theoretical advancements in Machine Learning </h3>
-                    <p><img src="https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/caret-down-icon.png" alt=""></p>
-                </div>
-                <div class="area-content hidden" id="a-1">
-                    <ol>
-                        <li>ML interpretability: 
-                            <ol>
-                                <li >Interpretable ML for image data</li>
-                            </ol>
-                        </li>
-                        <li>Fairness in AI</li>
-                        <li>
-                            Large Language Models and their applications
-                            <ol>
-                                <li>Parameter efficient fine tuning </li>
-                                <li>Intelligent Tutor based on LLMs</li>
-                            </ol>
-                        </li>
-                    </ol>
-                </div>
+            <!-- <p>This is a non exhaustive list of our ongoing projects.</p> -->
+            <div class="area" style="text-align: justify;">
+                <button class="research-head collapsible"><h4 style="margin: 0px; padding: 0px;">🧠 Theoretical advancements in Machine Learning</h4></button>
+                        <div class="content" style="background-color: #3a3a3a;">
+                            <div class="area-content">
+                                <ol>
+                                    <li>ML interpretability: 
+                                        <ol>
+                                            <li >Interpretable ML for image data</li>
+                                        </ol>
+                                    </li>
+                                    <li>Fairness in AI</li>
+                                    <li>
+                                        Large Language Models and their applications
+                                        <ol>
+                                            <li>Parameter efficient fine tuning </li>
+                                            <li>Intelligent Tutor based on LLMs</li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                <button class="research-head collapsible"><h4 style="margin: 0px; padding: 0px;">🧬 Computational Biology</h4></button>
+                        <div class="content" style="background-color: #3a3a3a;">
+                            <div class="area-content">
+                                <ol class="scollable">
+                                    <li>Machine learning for comparative analysis of metagenomic samples </li>
+                                    <li>Biomarker identification for Alzhemizers disease using DNA sequencing data [1,2]</li>
+                                    <li>Automated Protein function prediction using Machine Learning techniques</li>
+                                    <li>Interpretable ML in inference from sequencing data [8]</li>
+                                    <li>Recovering more sequences from long-reads sequencing experiments
+                                        <ol>
+                                            <li>
+                                                Even though the recent long-reads sequencers can result in longer reads compared to Illumnina sequencing,
+                                                the accuracy of the reads from the former is a lower and the amount of reads discarded due to the error is 
+                                                higher. In this work, we ll work on developing a method to improve the yield of long reads from sequencing metagenomic samples. 
+                                                <ol>
+                                                    <li>
+                                                        Comparative analysis of downstream analysis results when using reads thresholded at different quality levels: Q=20, Q=10, etc. 
+                                                    </li>
+                                                    <li>
+                                                        Deep Learning based approach for error correction in quality reads (with Q20)
+                                                    </li>
+                                                    <li>
+                                                        Machine learning based approach for recovering more reads including the reads with lower quality threshold. 
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        Visualisation techniques for comparative analysis of metagenomic samples
+                                        <ol>
+                                            <li>
+                                                There <a href="https://www.bioinformatics.babraham.ac.uk/training/10XRNASeq/Dimension%20Reduction.pdf" style="color: rgb(25, 25, 236);" target="_blank">exist more powerful dimensionality reduction</a> techniques
+                                                than PCA which can be used to compare across metagenomic 
+                                                samples. In this work, we'll analyze metagenomic samples gathered from multiple environments using such methods for 
+                                                visualisation. An example datasets that can be used are <a href="https://journals.asm.org/doi/pdf/10.1128/spectrum.01803-22" target="_blank" style="color: rgb(25, 25, 236);" >soil samples</a>, <a href="https://journals.asm.org/doi/pdf/10.1128/msystems.00359-22" target="_blank" style="color: rgb(25, 25, 236);">Coral samples</a> , <a href="https://reader.elsevier.com/reader/sd/pii/S2405805X22000059?token=3FC9B97113A8E9A94EEB304471DFB7772229F75D0671BC9BDBB8B69176C8D166BD9ED694B5388095ED10214930BE2C50&originRegion=us-east-1&originCreation=20230224075755" target="_blank" style="color: rgb(25, 25, 236);">cancer related sample</a>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        From relative abundance to absolute abundance
+                                        <ol>
+                                            <li>
+                                                It is more useful to learn the absolute abundance of species in a metagenomic sample than learning the relative
+                                                abundance of species in the sample, which will be beneficial in comparative analysis of the samples. This works
+                                                aims to develop a method to estimate absolute abundance of species in a metagenomic sample using DNA sequencing data.
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                <button class="research-head collapsible"><h4 style="margin: 0px; padding: 0px;">👁️ Computer Vision</h4></button>
+                        <div class="content" style="background-color: #3a3a3a;">
+                            <div class="area-content">
+                                <ol>
+                                    <li>Work on effective segmentation techniques for cancer detection: 
+                                        <a href="https://www.cancerimagingarchive.net/">https://www.cancerimagingarchive.net/</a>
+                                        <p>Skills:  Analytical skill, Programming, Machine Learning</p>
+                                    </li>
+                                    <li>Computer Vision and ABM for handling human -elephant conflict</li>
+                                    <li>Assisting crop management using Unmanned Aerial Vehicle (UAV)s</li>
+                                    <li>Computer vision for structural health monitoring</li>
+                                    <li>Computer Vision for minerals </li>
+                                </ol>
+                            </div>
+                        </div>
+                <button class="research-head collapsible"><h4 style="margin: 0px; padding: 0px;">🌱 AI for Agriculture</h4></button>
+                        <div class="content" style="background-color: #3a3a3a;">
+                            <div class="area-content">
+                                <ol>
+                                    <li>Use of computer vision  techniques in precision agriculture</li>
+                                    <li>Plant disease identification in a Sri Lankan context [3]</li>
+                                    <li>Detecting subclinical mastitis in dairy cows using somatic cell count data using Machine Learning</li>
+                                    <li>Machine Learning techniques for weather prediction [4]</li>
+                                    <li>Effective use of ML for wetland monitoring.</li>
+                                </ol>
+                            </div>
+                        </div>
+                <button class="research-head collapsible"><h4 style="margin: 0px; padding: 0px;">🎓 Education</h4></button>
+                        <div class="content" style="background-color: #3a3a3a;">
+                            <div class="area-content">
+                                <ol>
+                                    <li>Inferering learner behaviors from LMS data</li>
+                                    <li>Interpretable machine learning on learner behavior data [5]</li>
+                                    <li>Use/effect of Large Language Models (LLM)s on education</li>
+                                </ol>
+                            </div>
+                        </div>
+                <button class="research-head collapsible"><h4 style="margin: 0px; padding: 0px;">🚗 Transportation</h4></button>
+                        <div class="content" style="background-color: #3a3a3a;">
+                            <div class="area-content">
+                                <ol>
+                                    <li><a href="https://www.researchgate.net/publication/312444260_Driver_behaviour_data_linked_with_vehicle_weather_road_surface_and_daylight_data">Predicting road accidents relating with weather conditions</a></li>
+                                </ol>
+                            </div>
+                        </div>
+                <button class="research-head collapsible"><h4 style="margin: 0px; padding: 0px;">🔒 Security</h4></button>
+                        <div class="content" style="background-color: #3a3a3a;">
+                            <div class="area-content">
+                                <ol>
+                                    <li>Machine learning for handling cache timing based attacks</li>
+                                </ol>
+                            </div>
+                        </div>
+                <button class="research-head collapsible"><h4 style="margin: 0px; padding: 0px;">➗ Collaborating with Mathematics</h4></button>
+                        <div class="content" style="background-color: #3a3a3a;">
+                            <div class="area-content">
+                                <ol>
+                                    <li>Agent based modeling for transportation</li>
+                                    <li>Species diversity estimation from metagenomics data [6,7]</li>
+                                    <li>Improving the resolution of DNA sequencing experiments</li>
+                                    <li>Applications of Gene Expression Programming as an alternative to interpretable ML methods [4]</li>
+                                </ol>
+                            </div>
+                        </div>
             </div>
             
-            <div class="area"  >
-                <div class="research-head" onclick="showdown('a-2')">
-                    <h3>Computational Biology</h3>
-                    <p><img src="https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/caret-down-icon.png" alt=""></p>
-                </div>
-                <div class="area-content hidden" id="a-2" style="padding-left: 0;">
-                    
-                    <ol class="scollable">
-                        <li>Machine learning for comparative analysis of metagenomic samples </li>
-                        <li>Biomarker identification for Alzhemizers disease using DNA sequencing data [1,2]</li>
-                        <li>Automated Protein function prediction using Machine Learning techniques</li>
-                        <li>Interpretable ML in inference from sequencing data [8]</li>
-                        <li>Recovering more sequences from long-reads sequencing experiments
-                            <ol>
-                                <li>
-                                    Even though the recent long-reads sequencers can result in longer reads compared to Illumnina sequencing,
-                                    the accuracy of the reads from the former is a lower and the amount of reads discarded due to the error is 
-                                    higher. In this work, we ll work on developing a method to improve the yield of long reads from sequencing metagenomic samples. 
-                                    <ol>
-                                        <li>
-                                            Comparative analysis of downstream analysis results when using reads thresholded at different quality levels: Q=20, Q=10, etc. 
-                                        </li>
-                                        <li>
-                                            Deep Learning based approach for error correction in quality reads (with Q20)
-                                        </li>
-                                        <li>
-                                            Machine learning based approach for recovering more reads including the reads with lower quality threshold. 
-                                        </li>
-                                    </ol>
-                                </li>
-                            </ol>
-                        </li>
-                        <li>
-                            Visualisation techniques for comparative analysis of metagenomic samples
-                            <ol>
-                                <li>
-                                    There <a href="https://www.bioinformatics.babraham.ac.uk/training/10XRNASeq/Dimension%20Reduction.pdf" style="color: rgb(25, 25, 236);" target="_blank">exist more powerful dimensionality reduction</a> techniques
-                                    than PCA which can be used to compare across metagenomic 
-                                    samples. In this work, we'll analyze metagenomic samples gathered from multiple environments using such methods for 
-                                    visualisation. An example datasets that can be used are <a href="https://journals.asm.org/doi/pdf/10.1128/spectrum.01803-22" target="_blank" style="color: rgb(25, 25, 236);" >soil samples</a>, <a href="https://journals.asm.org/doi/pdf/10.1128/msystems.00359-22" target="_blank" style="color: rgb(25, 25, 236);">Coral samples</a> , <a href="https://reader.elsevier.com/reader/sd/pii/S2405805X22000059?token=3FC9B97113A8E9A94EEB304471DFB7772229F75D0671BC9BDBB8B69176C8D166BD9ED694B5388095ED10214930BE2C50&originRegion=us-east-1&originCreation=20230224075755" target="_blank" style="color: rgb(25, 25, 236);">cancer related sample</a>
-                                </li>
-                            </ol>
-                        </li>
-                        <li>
-                            From relative abundance to absolute abundance
-                            <ol>
-                                <li>
-                                    It is more useful to learn the absolute abundance of species in a metagenomic sample than learning the relative
-                                    abundance of species in the sample, which will be beneficial in comparative analysis of the samples. This works
-                                    aims to develop a method to estimate absolute abundance of species in a metagenomic sample using DNA sequencing data.
-                                </li>
-                            </ol>
-                        </li>
-                        </ol>
-                </div>
+        </div>
+
+        <div id="research-main" style="padding-left: 28px;padding-right: 28px;">
+            <h2>FEATURED RESEARCH</h2>
+            <div class="row" style="background-color:#dddcdc;border-radius: 12px;margin: 20px 10px;">
+            <div class="column">
+                <img src="assets\images\wind_img.jpg" alt="Pawan Danavi Wind Farm" style="width:100%; max-width:600px; border-radius:12px;margin: 0px;padding: 0px;">
             </div>
-            
-            <div class="area" >
-                <div class="research-head" onclick="showdown('a-3')" >
-                    <h3>Computer Vision </h3>
-                    <p><img src="https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/caret-down-icon.png" alt=""></p>
-                </div>
-                <div class="area-content hidden" id="a-3">
-                    <ol>
-                        <li>Work on effective segmentation techniques for cancer detection: 
-                            <a href="https://www.cancerimagingarchive.net/">https://www.cancerimagingarchive.net/</a>
-                            <p>Skills:  Analytical skill, Programming, Machine Learning</p>
-                        </li>
-                        <li>Computer Vision and ABM for handling human -elephant conflict</li>
-                        <li>Assisting crop management using Unmanned Aerial Vehicle (UAV)s</li>
-                        <li>Computer vision for structural health monitoring</li>
-                        <li>Computer Vision for minerals </li>
-                    </ol>
-                </div>
-            </div>
-            
-            <div class="area" >
-                <div class="research-head" onclick="showdown('a-4')" >
-                    <h3>AI for Agriculture </h3>
-                    <p><img src="https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/caret-down-icon.png" alt=""></p>
-                </div>
-                <div class="area-content hidden" id="a-4">
-                    <ol>
-                        <li>Use of computer vision  techniques in precision agriculture</li>
-                        <li>Plant disease identification in a Sri Lankan context [3]</li>
-                        <li>Detecting subclinical mastitis in dairy cows using somatic cell count data using Machine Learning</li>
-                        <li>Machine Learning techniques for weather prediction [4]</li>
-                        <li>Effective use of ML for wetland monitoring.</li>
-                    </ol>
-                </div>
+            <div class="column" style="text-align: justify;">
+                <h3>Forecasting electricity power generation of Pawan Danavi Wind Farm, Sri Lanka, using gene expression programming</h3>
+                <p>&nbsp;</p>
+                <p>This research introduces a forecasting model developed using Gene Expression Programming (GEP) to predict wind power generation at the Pawan Danavi wind farm in Sri Lanka. The model uses on-site wind speed and ambient temperature as inputs and demonstrates high accuracy (R² = 0.92). Unlike conventional machine learning methods, GEP provides a clear mathematical relationship between climatic factors and power output, making it especially useful for future projections under changing weather conditions. This is the first known application of GEP for wind power forecasting in Sri Lanka.</p>
             </div>
 
-            <div class="area" >
-                <div class="research-head" onclick="showdown('a-5')" >
-                    <h3>Education</h3>
-                    <p><img src="https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/caret-down-icon.png" alt=""></p>
-                </div>
-                <div class="area-content hidden" id="a-5">
-                    <ol>
-                        <li>Inferering learner behaviors from LMS data</li>
-                        <li>Interpretable machine learning on learner behavior data [5]</li>
-                        <li>Use/effect of Large Language Models (LLM)s on education</li>
-                    </ol>
-                </div>
             </div>
-            
-            <div class="area"  >
-                <div class="research-head" onclick="showdown('a-6')">
-                    <h3>Transportation</h3>
-                    <p><img src="https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/caret-down-icon.png" alt=""></p>
-                </div>
-                <div class="area-content hidden" id="a-6">
-                    <ol>
-                        <li><a href="https://www.researchgate.net/publication/312444260_Driver_behaviour_data_linked_with_vehicle_weather_road_surface_and_daylight_data">Predicting road accidents relating with weather conditions</a></li>
-                    </ol>
-                </div>
+            <div class="row" style="background-color:#dddcdc;border-radius: 12px;margin: 20px 10px">
+            <div class="column">
+                <img src="assets\images\kidney.png" style="width:100%; max-width:600px; border-radius:12px;margin: 0px;padding: 0px;">
             </div>
-            
-            <div class="area"  >
-                <div class="research-head" onclick="showdown('a-7')">
-                    <h3>Security</h3>
-                    <p><img src="https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/caret-down-icon.png" alt=""></p>
-                </div>
-                <div class="area-content hidden" id="a-7">
-                    <ol>
-                        <li>Machine learning for handling cache timing based attacks</li>
-                    </ol>
-                </div>
+            <div class="column" style="text-align: justify;">
+                <h3>Chronic Kidney Disease Prediction Using Machine Learning Methods</h3>
+                <p>&nbsp;</p>
+                <p>This research presents a machine learning workflow for the early prediction of Chronic Kidney Disease (CKD) using clinical data. The proposed approach includes data preprocessing, missing value handling through collaborative filtering, and attribute selection. Among 11 evaluated models, the Extra Trees and Random Forest classifiers achieved the highest accuracy with minimal attribute bias. The study also emphasizes the importance of domain knowledge and practical data collection considerations in building reliable CKD prediction systems.</p>
+            </div>
             </div>
 
-            <div class="area"  >
-                <div class="research-head" onclick="showdown('a-8')">
-                    <h3>Collaborating with Mathematics</h3>
-                    <p><img src="https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/caret-down-icon.png" alt=""></p>
-                </div>
-                <div class="area-content hidden" id="a-8">
-                    <ol>
-                        <li>Agent based modeling for transportation</li>
-                        <li>Species diversity estimation from metagenomics data [6,7]</li>
-                        <li>Improving the resolution of DNA sequencing experiments</li>
-                        <li>Applications of Gene Expression Programming as an alternative to interpretable ML methods [4]</li>
-                    </ol>
-                </div>
+            <div class="row" style="background-color:#dddcdc;border-radius: 12px;margin: 20px 10px">
+            <div class="column">
+                <img src="assets\images\oxford-img.png" style="width:100%; max-width:600px; border-radius:12px;margin: 0px;padding: 0px;">
             </div>
-            
+            <div class="column" style="text-align: justify;">
+                <h3>DeepSelectNet: deep neural network based selective sequencing for oxford nanopore sequencing</h3>
+                <p>&nbsp;</p>
+                <p>This research introduces DeepSelectNet, a deep learning-based method for accurate species classification using nanopore sequencing signals. Unlike existing approaches with variable accuracy across datasets (77–97%), DeepSelectNet directly classifies raw current signals using innovative preprocessing techniques and a regularized neural network architecture. The method significantly improves the reliability of selective sequencing, with promising applications in genomics and biodiversity studies.</p>   
+            </div>
+            </div>
+
+            <div class="row" style="background-color:#dddcdc;border-radius: 12px;margin: 20px 10px">
+            <div class="column">
+                <img src="assets\images\pipe.png" style="width:100%; max-width:600px; border-radius:12px;margin: 0px;padding: 0px;">
+            </div>
+            <div class="column" style="text-align: justify;">
+                <h3>Leveraging deep learning techniques for condition assessment of stormwater pipe network</h3>
+                <p>&nbsp;</p>
+                <p>This research presents a semi-automated, deep learning-based approach to improve the inspection of stormwater pipe networks, addressing the inefficiencies of traditional CCTV inspections. By integrating computer vision with YOLOv8 instance segmentation, the model accurately detects six defect types based on the WSA Code of Australia, achieving an mAP@0.5 of 0.92 (bounding boxes) and 0.90 (masks). Tested on footage from Banyule City Council, the system significantly reduces long-term costs and enables faster, more consistent assessments empowering local councils with an effective tool for infrastructure condition monitoring.</p>   
+            </div>
+            </div>
+
+            <div class="row" style="background-color:#dddcdc;border-radius: 12px;margin: 20px 10px">
+            <div class="column">
+                <img src="assets\images\micro.jpeg" style="width:100%; max-width:600px; border-radius:12px;margin: 0px;padding: 0px;">
+            </div>
+            <div class="column" style="text-align: justify;">
+                <h3>Forecasting renewable energy for microgrids using machine learning</h3>
+                <p>&nbsp;</p>
+                <p>This study presents a 1D Convolutional Neural Network (CNN) model for forecasting solar and wind energy generation in microgrids. By using data from the UC San Diego microgrid and San Diego Airport weather records, the model addresses key operational challenges such as voltage and frequency stability. Compared to traditional statistical methods, the proposed model achieved up to 229× lower MSE and 24× lower MAE, demonstrating the effectiveness of deep learning in improving short-term renewable energy forecasting and microgrid management.</p>   
+            </div>
+            </div>
         </div>
         
         <!-- PEOPLE -->
@@ -280,7 +362,7 @@
                         </div>
                         <div class="details">
                             <h4>Dr. Damayanthi Herath</h4>
-                            <p>senior lecturer</p>
+                            <p>Senior Lecturer at University of Peradeniya</p>
                             <p ><a href="mailto:damayanthiherat@eng.pdn.ac.lk" style="text-decoration: none;">Contact<img style="margin-right: 5px;" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/gmail-icon.png" alt=""></a></p>   
                         </div>
                     </div>
@@ -293,7 +375,7 @@
                         </div>
                         <div class="details">
                             <h4>Mr. Sampath Deegalla</h4>
-                            <p>senior lecturer</p>
+                            <p>Senior Lecturer at University of Peradeniya</p>
                             <a href="mailto:sampath@eng.pdn.ac.lk"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/gmail-icon.png" alt=""></a> 
                         </div>
                     </div>
@@ -306,7 +388,7 @@
                         </div>
                         <div class="details">
                             <h4>Prof. Roshan Ragel</h4>
-                            <p>senior lecturer</p>
+                            <p>Professor at University of Peradeniya</p>
                             <a href="mailto:ragelrg@eng.pdn.ac.lk"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/gmail-icon.png" alt=""></a> 
                         </div>
                     </div>
@@ -347,7 +429,7 @@
                     <div class="card">
                         <div class="image">
                             <a href="upuls.net " target="_blank">
-                                <img src="https://media.licdn.com/dms/image/C4D03AQG7cMx-J2NT4w/profile-displayphoto-shrink_200_200/0/1516604371655?e=1723075200&v=beta&t=ONjFR6qOD_Q5sZmPF2BZEmiRlEqhLYjibVem_qM58KI" alt="">
+                                <img src="https://i.pinimg.com/474x/e6/e4/df/e6e4df26ba752161b9fc6a17321fa286.jpg" alt="">
                             </a>
                         </div>
                         <div class="details">
@@ -360,7 +442,7 @@
                     <div class="card">
                         <div class="image">
                             <a href="linkedin.com/in/shamane-siriwardhana" target="_blank">
-                                <img src="https://media.licdn.com/dms/image/D5603AQFJOuRu8UQowQ/profile-displayphoto-shrink_200_200/0/1683953595408?e=1723075200&v=beta&t=tNlQf7hkk35lnaklmeYSapqOM21Bcvn82yoaiGi1IQg" alt="">
+                                <img src="https://media.licdn.com/dms/image/v2/D5603AQFJOuRu8UQowQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1683953595408?e=1756944000&v=beta&t=xy8VsMSS3k8-cGpBwhW492kTWDAqjS4F5c70qXSki1I" alt="">
                             </a>
                         </div>
                         <div class="details">
@@ -375,105 +457,252 @@
         </div>
 
         <!-- REFERENCES -->
-        <div id="references">
+        <div id="references" style="padding-left: 28px;padding-right: 28px;">
             <h2>REFERENCES</h2>
             
-            <div class="viewBox">
+            <div class="viewBox" style="text-align: justify;">
                 <ol>
-                    <li>
-                        <div class="source">
-                            <h4>
-                                Perera S. , Hewage K. , Gunarathne C. , Navarathna R. , Herath D. and Ragel R.G. 2020, July.
+                    
+                    <div>
+                        <button class="collapsible">Detection of Novel Biomarker Genes of Alzheimer’s Disease Using Gene Expression Data</button>
+                        <div class="content">
+                            <h4 style="padding-top: 5px;">
+                                Perera S. , Hewage K. , Gunarathne C. , Navarathna R. , Herath D. and Ragel R.G.
                             </h4>
                             <p>
-                                Detection of Novel Biomarker Genes of Alzheimer's Disease Using Gene Expression 
-                                Data. In 2020 Moratuwa Engineering Research Conference (MERCon)(pp. 1-6). IEEE.
+                                In 2020 Moratuwa Engineering Research Conference (MERCon)(pp. 1-6). IEEE. 2020, July.
                             </p>
+                            <p>
+                                Link: <a href="https://ieeexplore.ieee.org/abstract/document/9185336" target="_blank">https://ieeexplore.ieee.org/abstract/document/9185336</a>
+                            </p>
+                            <p>&nbsp;</p>
+                            <p>
+                                <h4>Abstract</h4> It is well recognized, that most common form of dementia is Alzheimer's disease and a successful cure or medication is not discovered. A plethora of research has been conducted to understand the underlying mechanism and the pathogenesis of the Alzheimer's disease. To explore the underlying genetic structure of the disease, gene expression data is being used by many researches and computational and statistical approaches were used to identify possible genes that are risk. In this paper, we propose a machine learning framework that can be used to identify possible bio-marker genes. Our experiments discover possible set of 14 genes, which some of them are validated by biological sources. We also present a critical analysis of the propose machine learning framework using GSE5281 gene dataset.
+                            </p>
+                            <p>&nbsp;</p>
                         </div>
-                    </li>
-                    <li>
-                        <div class="source">
-                            <h4>
+                    </div>
+                    <div>
+                        <button class="collapsible">Revealing MicroRNA Biomarkers for Alzheimer's Disease Using Next Generation Sequencing Data.</button>
+                        <div class="content">
+                            <h4 style="padding-top: 5px;">
                                 Dinuwanthi, Imalsha, et al.
                             </h4>
                             <p>
-                                "Revealing MicroRNA Biomarkers for Alzheimer's Disease Using Next Generation Sequencing Data." 2021 10th International 
-                                Conference on Information and Automation for Sustainability (ICIAfS). IEEE, 2021.
+                                2021 10th International Conference on Information and Automation for Sustainability (ICIAfS). IEEE. 2021, August.
                             </p>
+                            <p>
+                                Link: <a href="https://ieeexplore.ieee.org/abstract/document/9606093" target="_blank">https://ieeexplore.ieee.org/abstract/document/9606093</a>
+                            </p>
+                            <p>&nbsp;</p>
+                            <p>
+                                <h4>Abstract</h4> Alzheimer’s disease is recognized as one of the common diseases found among elders, which still has no successful cure. Different technologies such as microarray technology, Sanger sequencing, and Next Generation Sequencing have been used by various researchers for gathering samples. Out of these, Next Generation Sequencing has become more common nowadays, as it is a powerful platform which enables to sequence thousands or millions of DNA molecules simultaneously. A set of samples collected using Next Generation Sequencing technology is used in this study. The initial data set includes 70 samples and 2652 miRNAs. In this study, our goal is to determine the best set of miRNA biomarkers which are highly differentially expressed in Alzheimer’s disease. Initially, the data set is preprocessed with the aid of the Galaxy tool and python programming language. Significance value, fold change and area under curve analysis are the statistical methods which are used in this study. Random Forest algorithm and Principal Component Analysis are used for selecting the best set of biomarkers out of the data set obtained at the end of statistical analysis. Using the statistical methods, followed by machine learning techniques, we establish 25 microRNAs as biomarkers for Alzheimer’s disease. Furthermore, we provide an analysis of the selected 25 microRNAs with area under the receiver operating curve and classification algorithms.
+                            </p>
+                            <p>&nbsp;</p>
                         </div>
-                    </li>
-                    <li>
-                    <div class="source">
-                        <h4>
-                            Deshan, LA Chamli, MK Hans Thisanke, and Damayanthi Herath. 
-                        </h4>
-                        <p>
-                            "Transfer Learning for Accurate and Efficient Tomato Plant Disease Classification Using Leaf Images.
-                            " 2021 IEEE 16th International Conference on Industrial and Information Systems (ICIIS). IEEE, 2021.
-                        </p>
                     </div>
-                </li>
-                <li>
-                    <div class="source">
-                        <h4>
-                            Herath D. , Jayasinghe J. , Premarathne U.K. 2022.
-                        </h4>
-                        <p>
-                            Forecasting electricity power generation of Pawan Danavi wind farm, Sri Lanka using 
-                            gene-expression programming, Applied Computational Intelligence and Soft Computing Journal.
-                        </p>
+                    <div>
+                        <button class="collapsible">Transfer Learning for Accurate and Efficient Tomato Plant Disease Classification Using Leaf Images.</button>
+                        <div class="content">
+                            <h4 style="padding-top: 5px;">
+                                Deshan, LA Chamli, MK Hans Thisanke, and Damayanthi Herath.
+                            </h4>
+                            <p>
+                                2021 IEEE 16th International Conference on Industrial and Information Systems (ICIIS). IEEE. 2021, December.
+                            </p>
+                            <p>
+                                Link: <a href="https://ieeexplore.ieee.org/abstract/document/9660681" target="_blank">https://ieeexplore.ieee.org/abstract/document/9660681</a>
+                            </p>
+                            <p>&nbsp;</p>
+                            <p>
+                                <h4>Abstract</h4> Plant leaf diseases cause great damage to crops, resulting in significant yield losses. Traditionally, identification of plant leaf diseases depends on human annotation by visual inspection. Transfer learning has enabled use of existing solutions in one domain to problems from another domain, resulting in more robust and efficient solutions. This work presents a method to identify tomato plant diseases based on leaf images using transfer learning. We used a publicly available dataset which contains tomato plant leaf images for 10 different classes. We considered only five classes and data was split in ratio 8:1:1 for train, validation and test sets respectively. In this work, six different pre trained models were used with fine-tuning methods where we introduced some layers and removed some layers in the network architectures while enhancing the accuracy of models. Accuracies of all the models were above 97% except one model which got 95% accuracy on the testing. Precision, Recall, F1 Score, Confusion matrix and Classification reports were used for evaluations and finally a novel convolutional neural network is proposed for plant disease classification focusing on a real environment. The mentioned model achieved an accuracy of 99.98% on training and an accuracy of 99% on testing. In this work, a good generalization performance could be achieved without data augmentation. The experimental results show that the proposed fine-tuned architecture is effective in identifying tomato leaf diseases and it could be generalized to identify leaf diseases in other plants.
+                            </p>
+                            <p>&nbsp;</p>
+                        </div>
                     </div>
-                </li>
-                <li>
-                    <div class="source">
-                        <h4>
-                            Jayasundara, Shyaman, Amila Indika, and Damayanthi Herath.
-                        </h4>
-                        <p>
-                            "Interpretable Student Performance Prediction Using Explainable Boosting Machine for 
-                            Multi-Class Classification." 2022 2nd International Conference on Advanced Research in Computing (ICARC). IEEE, 2022.
-                        </p>
+                    <div>
+                        <button class="collapsible">Forecasting electricity power generation of Pawan Danavi Wind Farm, Sri Lanka, using gene expression programming.</button>
+                        <div class="content">
+                            <h4 style="padding-top: 5px;">
+                                Herath D. , Jayasinghe J. , Premarathne U.K.
+                            </h4>
+                            <p>
+                                Applied Computational Intelligence and Soft Computing. WILEY. 2022, May.
+                            </p>
+                            <p>
+                                Link: <a href="https://onlinelibrary.wiley.com/doi/pdf/10.1155/2022/7081444" target="_blank">https://onlinelibrary.wiley.com/doi/pdf/10.1155/2022/7081444</a>
+                            </p>
+                            <p>&nbsp;</p>
+                            <p>
+                                <h4>Abstract</h4> This paper presents the development of a wind power forecasting model based on gene expression programming (GEP) for one of the major wind farms in Sri Lanka, Pawan Danavi. With the ever-increasing demand for renewable power generation, Sri Lanka has started harnessing electricity from wind power. Though the initial establishment cost of wind farms is high, the analyses clearly showcased the economic sustainability of wind power generation in long term. In this context, forecasting the wind power generation at Sri Lankan wind farms is important in many ways. However, limited research has been carried out in Sri Lanka to predict the wind power generation against the changing climate. Therefore, to overcome this research gap, a model was developed to forecast wind power generation against two climatic factors, viz. on-site wind speed and ambient temperature. The results showcased the robustness and accuracy of the proposed GEP-based forecasting model (with R2 = 0.92, index of agreement = 0.98, and RMSE = 259 kW). Moreover, the results of the study were compared against three different forecasting models and found comparable in terms of the model accuracy. The GEP-based model is advantageous over machine learning techniques due to its capability in deriving a mathematical expression. As an acceptable relationship was found between wind power generation and climatic factors, the proposed model facilitates the future projection of wind power generations with forecasted climatic factors. Though the application of GEP in the field of wind power generation is reported in a few research publications, this is the first research in which GEP is employed to model the power generation with respect to weather indices. The proposed prediction model is advantageous than machine learning models as the relationship between the wind power and the weather indices can be expressed.
+                            </p>
+                            <p>&nbsp;</p>
+                        </div>
                     </div>
-                </li>
-                <li>
-                    <div class="source">
-                        <h4>
-                            Herath D. , Jayasundara D. , Ackland D. , Saeed I. , Tang S.L. and Halgamuge S. 2017.
-                        </h4>
-                        <p>
-                            Assessing species diversity using Metavirome data: methods and challenges. 
-                            Computational and structural biotechnology journal, 15, pp.447-455.
-                        </p>
+                    <div>
+                        <button class="collapsible">Interpretable Student Performance Prediction Using Explainable Boosting Machine for Multi-Class Classification.</button>
+                        <div class="content">
+                            <h4 style="padding-top: 5px;">
+                                Jayasundara, Shyaman, Amila Indika, and Damayanthi Herath.
+                            </h4>
+                            <p>
+                                2022 2nd International Conference on Advanced Research in Computing (ICARC). IEEE. 2022, February.
+                            </p>
+                            <p>
+                                Link: <a href="https://ieeexplore.ieee.org/abstract/document/9753867" target="_blank">https://ieeexplore.ieee.org/abstract/document/9753867</a>
+                            </p>
+                            <p>&nbsp;</p>
+                            <p>
+                                <h4>Abstract</h4> Students’ performance prediction can have many uses in the education sector. It helps to take measures to support struggling students and to improve course delivery. However, having meaningful explanations along each prediction is essential for the reliability of the predictions and hence is desirable. In this work, we propose a method for predicting student performance while generating explanations of the predictions made. An Explainable Boosting Machine is implemented to suit multi-class classification to achieve the mentioned objective. The classification performance of the proposed approach is compared with similar supervised learning models, namely a linear model, a decision tree, and a decision rule-based approach for accuracy, precision, recall, and F1 Score. Results show that the Explainable Boosting Machine ranks second in classification performance. At the same time, it provides global and local explanations of the predictions, which are further shown to be consistent with the observations made in feature selection. The proposed approach and its extensions can help in predicting student performance while enabling the interpretation of the predictions made. It will enable educators to devise strategies to improve students’ performance.
+                            </p>
+                            <p>&nbsp;</p>
+                        </div>
                     </div>
-                </li>
-                <li>
-                    <div class="source">
-                        <h4>
-                            N Ranasinghe, A Ramanan, S Fernando, PN Hameed, D Herath, T Malepathirana, P Suganthan, M Niranjan, S Halgamuge.
-                        </h4>
-                        <p>
-                            Interpretability and accessibility of machine learning in selected food processing, agriculture and health 
-                            applications, Journal of National Science Foundation, Sri Lanka.
-                        </p>
+                    <div>
+                        <button class="collapsible">Assessing species diversity using metavirome data: methods and challenges.</button>
+                        <div class="content">
+                            <h4 style="padding-top: 5px;">
+                                Herath D. , Jayasundara D. , Ackland D. , Saeed I. , Tang S.L. and Halgamuge S.
+                            </h4>
+                            <p>
+                                Computational and structural biotechnology journal. Elsevier. 2017, January.
+                            </p>
+                            <p>
+                                Link: <a href="https://www.sciencedirect.com/science/article/pii/S2001037017300223" target="_blank">https://www.sciencedirect.com/science/article/pii/S2001037017300223</a>
+                            </p>
+                            <p>&nbsp;</p>
+                            <p>
+                                <h4>Abstract</h4> Assessing biodiversity is an important step in the study of microbial ecology associated with a given environment. Multiple indices have been used to quantify species diversity, which is a key biodiversity measure. Measuring species diversity of viruses in different environments remains a challenge relative to measuring the diversity of other microbial communities. Metagenomics has played an important role in elucidating viral diversity by conducting metavirome studies; however, metavirome data are of high complexity requiring robust data preprocessing and analysis methods. In this review, existing bioinformatics methods for measuring species diversity using metavirome data are categorised broadly as either sequence similarity-dependent methods or sequence similarity-independent methods. The former includes a comparison of DNA fragments or assemblies generated in the experiment against reference databases for quantifying species diversity, whereas estimates from the latter are independent of the knowledge of existing sequence data. Current methods and tools are discussed in detail, including their applications and limitations. Drawbacks of the state-of-the-art method are demonstrated through results from a simulation. In addition, alternative approaches are proposed to overcome the challenges in estimating species diversity measures using metavirome data.
+                            </p>
+                            <p>&nbsp;</p>
+                        </div>
                     </div>
-                </li>
-                <li>
-                    <div class="source">
-                        <h4>
-                            Jayasundara D. , Herath D. , Senanayake D. , Saeed I. , Yang C.Y. , Sun Y. , Chang B.C. , Tang S.L. and Halgamuge S.K. 2019. 
-                        </h4>
-                        <p>
-                            ENVirT: inference of ecological characteristics of viruses from metagenomic data. BMC bioinformatics, 19(13), pp.1-12.
-                        </p>
+                    <div>
+                        <button class="collapsible">Interpretability and accessibility of machine learning in selected food processing, agriculture and health applications.</button>
+                        <div class="content">
+                            <h4 style="padding-top: 5px;">
+                                N Ranasinghe, A Ramanan, S Fernando, PN Hameed, D Herath, T Malepathirana, P Suganthan, M Niranjan, S Halgamuge.
+                            </h4>
+                            <p>
+                                Journal of the National Science Foundation of Sri Lanka. National Science Foundation of Sri Lanka. 2022, November.
+                            </p>
+                            <p>
+                                Link: <a href="https://jnsfsl.sljol.info/articles/10.4038/jnsfsr.v50i0.11249" target="_blank">https://jnsfsl.sljol.info/articles/10.4038/jnsfsr.v50i0.11249</a>
+                            </p>
+                            <p>&nbsp;</p>
+                            <p>
+                                <h4>Abstract</h4> Artificial Intelligence (AI) and its data-centric branch of machine learning (ML) have greatly evolved over the last few decades. However, as AI is used increasingly in real world use cases, the importance of the interpretability of and accessibility to AI systems have become major research areas. The lack of interpretability of ML based systems is a major hindrance to widespread adoption of these powerful algorithms. This is due to many reasons including ethical and regulatory concerns, which have resulted in poorer adoption of ML in some areas. The recent past has seen a surge in research on interpretable ML. Generally, designing a ML system requires good domain understanding combined with expert knowledge. New techniques are emerging to improve ML accessibility through automated model design. This paper provides a review of the work done to improve interpretability and accessibility of machine learning in the context of global problems while also being relevant to developing countries. We review work under multiple levels of interpretability including scientific and mathematical interpretation, statistical interpretation and partial semantic interpretation. This review includes applications in three areas, namely food processing, agriculture and health.
+                            </p>
+                            <p>&nbsp;</p>
+                        </div>
                     </div>
-                </li>
+                    <div>
+                        <button class="collapsible">ENVirT: inference of ecological characteristics of viruses from metagenomic data.</button>
+                        <div class="content">
+                            <h4 style="padding-top: 5px;">
+                                Jayasundara D. , Herath D. , Senanayake D. , Saeed I. , Yang C.Y. , Sun Y. , Chang B.C. , Tang S.L. and Halgamuge S.K.
+                            </h4>
+                            <p>
+                                BMC bioinformatics. Springer Nature. 2019, February.
+                            </p>
+                            <p>
+                                Link: <a href="https://link.springer.com/article/10.1186/s12859-018-2398-5" target="_blank">https://link.springer.com/article/10.1186/s12859-018-2398-5</a>
+                            </p>
+                            <p>&nbsp;</p>
+                            <p>
+                                <h4>Abstract</h4> Background <br>
+                                Estimating the parameters that describe the ecology of viruses,particularly those that are novel, can be made possible using metagenomic approaches. However, the best-performing existing methods require databases to first estimate an average genome length of a viral community before being able to estimate other parameters, such as viral richness. Although this approach has been widely used, it can adversely skew results since the majority of viruses are yet to be catalogued in databases.
+                                <br><br>
+                                Results<br>
+                                In this paper, we present ENVirT, a method for estimating the richness of novel viral mixtures, and for the first time we also show that it is possible to simultaneously estimate the average genome length without a priori information. This is shown to be a significant improvement over database-dependent methods, since we can now robustly analyze samples that may include novel viral types under-represented in current databases. We demonstrate that the viral richness estimates produced by ENVirT are several orders of magnitude higher in accuracy than the estimates produced by existing methods named PHACCS and CatchAll when benchmarked against simulated data. We repeated the analysis of 20 metavirome samples using ENVirT, which produced results in close agreement with complementary in virto analyses.
+                                <br><br>
+                                Conclusions<br>
+                                These insights were previously not captured by existing computational methods. As such, ENVirT is shown to be an essential tool for enhancing our understanding of novel viral populations.
+                            </p>
+                            <p>&nbsp;</p>
+                        </div>
+                    </div>
+                    <div>
+                    <button class="collapsible">Forecasting renewable energy for microgrids using machine learning.</button>
+                    <div class="content">
+                            <h4 style="padding-top: 5px;">
+                                P Sudasinghe, D Herath, I Karunarathne, H Weeratunge, L Jayasuriya
+                            </h4>
+                            <p>
+                                Discover Applied Sciences. Springer Nature. 2025, May.
+                            </p>
+                            <p>
+                                Link: <a href="https://link.springer.com/article/10.1007/s42452-025-06895-5" target="_blank">https://link.springer.com/article/10.1007/s42452-025-06895-5</a>
+                            </p>
+                            <p>&nbsp;</p>
+                            <p>
+                                <h4>Abstract</h4> Microgrids, comprised of interconnected loads and distributed energy resources, function as single controllable entities with respect to the main grid. However, the inherent variability of distributed wind and solar generation within microgrids presents operational stability challenges concerning voltage regulation and frequency stability. Accurate forecasting of renewable generation is crucial for mitigating these challenges. This work proposes a one-dimensional Convolutional Neural Network (1-D CNN) based approach to forecast photovoltaic (PV) generation and wind energy, using data from the University of California, San Diego microgrid and San Diego Airport weather records. The proposed method is evaluated against various forecasting methods using key metrics: Mean Squared Error (MSE), Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and R-squared value. Results show that the 1-D CNN model achieves an improvement of up to 229.8 times in MSE and a 24.47 fold improvement in MAE compared to baseline models that use traditional statistical methods in forecasting. This demonstrates the potential of machine learning for enhancing microgrid management, particularly in short-term forecasting of renewable generation.
+                            </p>
+                            <p>&nbsp;</p>
+                    </div>
+
+                    <button class="collapsible">Leveraging deep learning techniques for condition assessment of stormwater pipe network.</button>
+                    <div class="content">
+                            <h4 style="padding-top: 5px;">
+                                AN Yussuf, NP Weerasinghe, H Chen, L Hou, D Herath, M Rashid, G Zhang, S Setunge
+                            </h4>
+                            <p>
+                                Journal of Civil Structural Health Monitoring. Springer Nature. 2024, August.
+                            </p>
+                            <p>
+                                Link: <a href="https://link.springer.com/article/10.1007/s13349-024-00841-6" target="_blank">https://link.springer.com/article/10.1007/s13349-024-00841-6</a>
+                            </p>
+                            <p>&nbsp;</p>
+                            <p>
+                                <h4>Abstract</h4> Inspections and condition monitoring of the stormwater pipe networks have become increasingly crucial due to their vast geographical span and complex structure. Unmanaged pipelines present significant risks, such as water leakage and flooding, posing threats to urban infrastructure. However, only a small percentage of pipelines undergo annual inspections. The current practice of CCTV inspections is labor-intensive, time-consuming, and lacks consistency in judgment. Therefore, this study aims to propose a cost-effective and efficient semi-automated approach that integrates computer vision technology with Deep Learning (DL) algorithms. A DL model is developed using YOLOv8 with instance segmentation to identify six types of defects as described in Water Services Association (WSA) Code of Australia. CCTV footage from Banyule City Council was incorporated into the model, achieving a mean average precision (mAP@0.5) of 0.92 for bounding boxes and 0.90 for masks. A cost–benefit analysis is conducted to assess the economic viability of the proposed approach. Despite the high initial development costs, it was observed that the ongoing annual costs decreased by 50%. This model allowed for faster, more accurate, and consistent results, enabling the inspection of additional pipelines each year. This model serves as a tool for every local council to conduct condition monitoring assessments for stormwater pipeline work in Australia, ultimately enhancing resilient and safe infrastructure asset management.
+                            </p>
+                            <p>&nbsp;</p>
+                    </div>
+
+                    <button class="collapsible">DeepSelectNet: deep neural network based selective sequencing for oxford nanopore sequencing.</button>
+                    <div class="content">
+                            <h4 style="padding-top: 5px;">
+                                A Senanayake, H Gamaarachchi, D Herath, R Ragel
+                            </h4>
+                            <p>
+                                BMC bioinformatics. Springer Nature. 2023, January.
+                            </p>
+                            <p>
+                                Link: <a href="https://link.springer.com/article/10.1186/s12859-023-05151-0" target="_blank">https://link.springer.com/article/10.1186/s12859-023-05151-0</a>
+                            </p>
+                            <p>&nbsp;</p>
+                            <p>
+                                <h4>Abstract</h4> Nanopore sequencing allows selective sequencing, the ability to programmatically reject unwanted reads in a sample. Selective sequencing has many present and future applications in genomics research and the classification of species from a pool of species is an example. Existing methods for selective sequencing for species classification are still immature and the accuracy highly varies depending on the datasets. For the five datasets we tested, the accuracy of existing methods varied in the range of 77 to 97% (average accuracy < 89%). Here we present DeepSelectNet, an accurate deep-learning-based method that can directly classify nanopore current signals belonging to a particular species. DeepSelectNet utilizes novel data preprocessing techniques and improved neural network architecture for regularization.
+                            </p>
+                            <p>&nbsp;</p>
+                    </div>
+
+                    <button class="collapsible">Chronic Kidney Disease Prediction Using Machine Learning Methods.</button>
+                    <div class="content">
+                            <h4 style="padding-top: 5px;">
+                                IU Ekanayake, D Herath
+                            </h4>
+                            <p>
+                                2020 Moratuwa Engineering Research Conference (MERCon). IEEE. 2020, July.
+                            </p>
+                            <p>
+                                Link: <a href="https://ieeexplore.ieee.org/abstract/document/9185249" target="_blank">https://ieeexplore.ieee.org/abstract/document/9185249</a>
+                            </p>
+                            <p>&nbsp;</p>
+                            <p>
+                                <h4>Abstract</h4> Chronic Kidney Disease (CKD) or chronic renal disease has become a major issue with a steady growth rate. A person can only survive without kidneys for an average time of 18 days, which makes a huge demand for a kidney transplant and Dialysis. It is important to have effective methods for early prediction of CKD. Machine learning methods are effective in CKD prediction. This work proposes a workflow to predict CKD status based on clinical data, incorporating data prepossessing, a missing value handling method with collaborative filtering and attributes selection. Out of the 11 machine learning methods considered, the extra tree classifier and random forest classifier are shown to result in the highest accuracy and minimal bias to the attributes. The research also considers the practical aspects of data collection and highlights the importance of incorporating domain knowledge when using machine learning for CKD status prediction.
+                            </p>
+                            <p>&nbsp;</p>
+                    </div>
+
+                    </div>
                 </ol>
             </div>
             
         </div>
 
         <!--  JOIN US -->
-        <div id="joinUs">
+        <div id="joinUs" style="padding-left: 28px;padding-right: 28px;">
             <h2>JOIN US</h2>
 
             <div class="joinUs-initial">
@@ -537,12 +766,12 @@
         </div>
 
         <!-- WEB MASTERS -->
-         <div id="webmasters">
+         <div id="webmasters" style="padding-left: 28px;padding-right: 28px;">
             <h2>Web Masters</h2>
             <p class="webmasters-info">This website is maintained by <a href="https://www.linkedin.com/in/vithushan-e-t-l-265a072a1/">VITHUSHAN E.T.L.</a> AND <a href="https://www.linkedin.com/in/eniyavan-thirumaran-195537291/">ENIYAVAN T.</a> [Department of Computer Engineering, Univeristy of Peradeniya] </p>
 
             <p class="webUpdateDate">
-                Last Update : 27-07-2024
+                Last Update : 06-08-2025
             </p>
              
             <p class="concerns">
@@ -572,7 +801,7 @@
     
 
         <div class="copyright">
-            <p>Copyright © 2024 University of Peradeniya.  All rights Reserved.</p>
+            <p>Copyright © <span id="year"></span> University of Peradeniya. All rights reserved.</p>
         </div>
     </footer>
 
